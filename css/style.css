@@ -1,0 +1,825 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700;900&family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Colores */
+/* Fuentes */
+html {
+  font-size: 62.5%;
+  /* cambia la base de 16px a 10px */
+  color: #30343F;
+  min-width: 37.5rem;
+}
+
+body {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, #e9e9e9));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e9e9e9 50%);
+  overflow-x: hidden;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Textos (excepto footer) */
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* WhatsApp flotante */
+.btn-whatsapp {
+  display: block;
+  font-size: 5rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 2rem;
+  line-height: 8rem;
+  text-align: center;
+  z-index: 999;
+  -webkit-filter: grayscale(9);
+          filter: grayscale(9);
+}
+
+.btn-whatsapp img {
+  width: 15rem;
+}
+
+.btn-whatsapp:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Header & Nav */
+.header__top {
+  text-align: right;
+  background-color: #30343F;
+  color: #fff;
+  height: auto;
+}
+
+.header__top p {
+  padding: .5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-right: 2rem;
+}
+
+.header__navbar {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.header__navbar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.header__navbar a {
+  color: #999999;
+}
+
+.header__navbar a:hover, .header__navbar a:focus {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #30343F;
+}
+
+.header__navbar .bg-light,
+.header__navbar .navbar-collapse,
+.header__navbar .navbar_color {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 0;
+}
+
+.header__navbar .toggler {
+  font-size: 3rem;
+  padding: .5rem;
+}
+
+.header__navbar .navbar__menu {
+  width: 100% !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__navbar .navbar__menu .active {
+  color: #30343F;
+  border-bottom: 0.2rem solid #79DCCB;
+}
+
+.header__navbar .navbar__menu .menu__wp {
+  background-color: #FB9FB4;
+  padding: 1rem;
+  border: 1px solid #FB9FB4;
+  border-radius: 2rem 1rem;
+}
+
+.header__navbar .navbar__menu .menu__wp a {
+  color: #30343F;
+}
+
+.header__navbar .navbar__menu .menu__wp:hover {
+  background-color: #30343F;
+  border: 1px solid #30343F;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header__navbar .navbar__menu .menu__wp:hover a {
+  color: #fff;
+}
+
+/* Foooter */
+.footer {
+  background-color: #30343F;
+  text-align: center;
+  color: #E9E9E9;
+  border: #79DCCB solid 1rem;
+}
+
+.footer i {
+  color: #ffffff;
+}
+
+.footer .footer__navbar {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .footer__navbar a {
+  color: #fff;
+}
+
+.footer .footer__text {
+  border-bottom: #C9D6DF .1rem solid;
+  border-top: #C9D6DF .1rem solid;
+  padding: 1.4rem;
+}
+
+.footer .footer__text p {
+  margin: auto;
+}
+
+.footer .footer__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  margin: 1rem;
+}
+
+.footer .footer__logos__img {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__logos__img img {
+  width: 100%;
+}
+
+.footer .footer__logos__social a {
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
+}
+
+.footer .footer__logos__social a:hover, .footer .footer__logos__social a:focus {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer .footer__copyright {
+  height: auto;
+  text-align: center;
+  color: #000;
+  background-color: #79DCCB;
+  padding: .5rem;
+}
+
+.footer .footer__copyright p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+/* Banner */
+.index {
+  margin: 0 2rem;
+}
+
+.index .index__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2rem .5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index .index__banner h1 {
+  font-family: "Roboto", sans-serif;
+  line-height: 4rem;
+}
+
+.index .index__banner h2 {
+  font-weight: 700;
+  color: #FB9FB4;
+  margin-bottom: 2.5rem;
+}
+
+.index .index__banner__text {
+  padding: 1rem;
+  color: #212529;
+  padding-left: 1rem;
+}
+
+.index .carousel-inner {
+  max-height: 40rem;
+  max-width: 60rem;
+  margin-left: 2rem;
+}
+
+.button {
+  background-color: #212529;
+  letter-spacing: .1rem;
+  padding: 1.3rem 2rem 1.3rem;
+  outline: 0;
+  border: 0.2rem solid #30343F;
+  border-radius: 2rem 1rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #30343F;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.button:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #79DCCB;
+  border-radius: 2rem 1rem;
+}
+
+.button:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.button a {
+  color: #30343F;
+}
+
+.button--form {
+  background-color: #FB9FB4;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.button--form:hover {
+  background-color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* Servicios */
+.index-servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #30343F;
+  padding: 2rem;
+  margin: 2rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.index-servicios .index-servicios__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-servicios .index-servicios__icon h2 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.index-servicios .index-servicios__icon img {
+  width: 7rem;
+  -webkit-filter: invert(9);
+          filter: invert(9);
+}
+
+/* Estudio */
+.index-estudio {
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.index-estudio .index-estudio__video {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-estudio .index-estudio__video img {
+  height: 50rem;
+  border-radius: 5rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-estudio .index-carrusel__texto {
+  margin: 2rem;
+}
+
+.index-estudio .index-carrusel__btn {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.index-estudio .index-carrusel__btn a {
+  color: #30343F;
+  text-decoration: none;
+  background-color: #79DCCB;
+  padding: 1.4rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.index-estudio .index-carrusel__btn a:hover, .index-estudio .index-carrusel__btn a:focus {
+  background-color: #FB9FB4;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #E9E9E9;
+}
+
+/* Reviews */
+.index-reviews {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.index-reviews h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.index-reviews .index-reviews__card {
+  text-align: center;
+  border-radius: 3rem 1rem;
+  margin: 1rem;
+  padding: 1.3rem 2rem 1.3rem;
+  outline: 0;
+  border: 0.2rem solid #30343F;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  color: #fff;
+}
+
+.index-reviews .index-reviews__card:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #FB9FB4;
+  border-radius: 3rem 1rem;
+}
+
+.index-reviews .index-reviews__card h2 {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: .1rem;
+  margin: 2rem 0;
+  -webkit-transition: color .45s ease;
+  transition: color .45s ease;
+  text-transform: uppercase;
+  transition: color .45s ease;
+  border-top: 1px solid #30343F;
+  padding: 1rem;
+}
+
+.index-reviews .index-reviews__card p {
+  color: #30343F;
+  line-height: 1.8;
+}
+
+/* GrowShop */
+.index-weedside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem .5rem;
+  margin: 2rem;
+}
+
+.index-weedside .index-weedside__img {
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-weedside .index-weedside__img img {
+  height: 20rem;
+  margin: 1rem;
+}
+
+/* Form contacto */
+.index-contacto {
+  background: #79dccb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#79dccb), color-stop(50%, #fb9fb4));
+  background: linear-gradient(0deg, #79dccb 0%, #fb9fb4 50%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.index-contacto form {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.index-contacto form input,
+.index-contacto form textarea {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.index-contacto .index-contacto__map {
+  padding: 2rem;
+}
+
+.index-carrusel__slide--estudio {
+  margin: 0 auto;
+}
+
+.box-tattoo {
+  margin-top: 2rem;
+  background: #79dccb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#79dccb), color-stop(50%, #fb9fb4));
+  background: linear-gradient(0deg, #79dccb 0%, #fb9fb4 50%);
+}
+
+.box-tattoo .box-tattoo__texto {
+  padding: 3rem;
+}
+
+.box-tattoo .box-tattoo__texto iframe {
+  height: 35rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box-tattoo .box-tattoo__img img {
+  width: 100%;
+}
+
+.main-artistas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 1rem;
+}
+
+.main-artistas a {
+  color: #fff;
+  background-color: #FB9FB4;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border: 1px solid #FB9FB4;
+  border-radius: 1rem .5rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.main-artistas .main-artistas__card {
+  text-align: center;
+  border-radius: 3rem 1rem;
+  margin: 1rem;
+  padding: 1.3rem 2rem 1.3rem;
+  outline: 0;
+  border: 0.2rem solid #30343F;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  color: #fff;
+  height: 50rem;
+  margin: 2rem 0;
+}
+
+.main-artistas .main-artistas__card h2 {
+  padding: 3rem;
+  font-size: 1.8rem;
+}
+
+.main-artistas .main-artistas__card--alan-reilly:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: none;
+  background: url("https://i.ibb.co/L8rc0hh/20210814-203115.jpg");
+  border-radius: 3rem 1rem;
+}
+
+.main-artistas .main-artistas__card--alan-reilly:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.main-artistas .main-artistas__card--adrian-mushrooms:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: none;
+  background: url("https://i.ibb.co/9Z8ZVMv/20210814-203115.jpg");
+  border-radius: 3rem 1rem;
+}
+
+.main-artistas .main-artistas__card--adrian-mushrooms:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.main-artistas .main-artistas__card--gabriel-gonzalez:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: none;
+  background: url("https://i.ibb.co/D5crRw8/20210814-203115.jpg");
+  border-radius: 3rem 1rem;
+}
+
+.main-artistas .main-artistas__card--gabriel-gonzalez:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.main-artistas .main-artistas__card--gordo-satanico:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: none;
+  background: url("https://i.ibb.co/ncTDp9y/20210814-203115.jpg");
+  border-radius: 3rem 1rem;
+}
+
+.main-artistas .main-artistas__card--gordo-satanico:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.main-artistas .main-artistas__card--jonhy-trece:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: none;
+  background: url("https://i.ibb.co/g9Ksj8n/20210814-203115.jpg");
+  border-radius: 3rem 1rem;
+}
+
+.main-artistas .main-artistas__card--jonhy-trece:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.main-artistas .main-artistas__card--nico-viegas:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: .7rem;
+  left: .7rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: none;
+  background: url("https://i.ibb.co/4pChPkK/20210814-203115.jpg");
+  border-radius: 3rem 1rem;
+}
+
+.main-artistas .main-artistas__card--nico-viegas:hover:after {
+  top: 0;
+  left: 0;
+  color: #30343F;
+}
+
+.main_contacto__texto {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 2px solid #79DCCB;
+}
+
+.main_contacto__transportes {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.main_contacto__transportes h3 {
+  text-transform: uppercase;
+}
+
+.main_contacto__transportes i {
+  font-size: 5rem;
+  color: #30343F;
+  padding: 2rem;
+}
+
+.main-faqs {
+  padding: 3rem;
+}
+
+.main-faqs__desplegable {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+}
+
+.main-faqs__desplegable .accordion-header button {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

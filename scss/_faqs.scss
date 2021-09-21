@@ -1,0 +1,14 @@
+.main-faqs {
+padding: 3rem;
+}
+
+.main-faqs__desplegable {
+    font-family: $nunito;
+    font-size: 1.6rem;
+
+    .accordion-header button {
+        font-family: $nunito;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}

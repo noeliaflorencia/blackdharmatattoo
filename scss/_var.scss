@@ -1,0 +1,104 @@
+/* Colores */
+
+$rosa: #FB9FB4;
+$negro: #30343F;
+$gris: #E9E9E9;
+$aqua: #79DCCB;
+
+
+/* Fuentes */
+
+$nunito: 'Nunito',
+sans-serif;
+$roboto: 'Roboto',
+sans-serif;
+$font-weights: ("regular": 300, "medium": 700, "bold": 900);
+
+@mixin button-dharma {
+
+
+    letter-spacing: .1rem;
+    padding: 1.3rem 2rem 1.3rem;
+    outline: 0;
+    border: .2rem solid $negro;
+    border-radius: 2rem 1rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    font-family: $nunito;
+    font-weight: map-get($font-weights,medium);
+    color: $negro;
+    font-size: 1.8rem;
+    text-align: center;
+
+
+}
+
+@mixin button-dharma--after ($background-button) {
+
+    &:after {
+        content: "";
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: .7rem;
+        left: .7rem;
+        transition: 0.2s;
+        background-color: $background-button;
+        border-radius: 2rem 1rem;
+    }
+
+    &:hover:after {
+        top: 0;
+        left: 0;
+        color: $negro;
+    }
+
+    a {
+        color: $negro;
+    }
+
+}
+
+@mixin card {
+
+    text-align: center;
+    border-radius: 3rem 1rem;
+    margin: 1rem;
+    padding: 1.3rem 2rem 1.3rem;
+    outline: 0;
+    border: .2rem solid $negro;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: #fff;
+
+}
+
+@mixin card-after ($background-color-card,$background-card:none) {
+    &:after {
+        content: "";
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: .7rem;
+        left: .7rem;
+        transition: 0.2s;
+        background-color: $background-color-card;
+        background: $background-card;
+        border-radius: 3rem 1rem;
+    }
+
+    &:hover:after {
+        top: 0;
+        left: 0;
+        color: $negro;
+    }   
+}

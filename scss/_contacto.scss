@@ -1,0 +1,27 @@
+.main_contacto__texto {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: map-get($font-weights,medium);
+    font-family: $nunito;
+    border-bottom: 2px solid $aqua;
+}
+
+.main_contacto__transportes {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    
+
+    h3 {
+        text-transform: uppercase;
+    }
+    
+
+    i {
+        font-size:5rem;
+        color: $negro;
+        padding: 2rem;
+    }
+    
+}

@@ -1,0 +1,261 @@
+html {
+    
+    font-size: 62.5%;
+    /* cambia la base de 16px a 10px */
+    color: $negro;
+    min-width: 37.5rem;
+
+}
+
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(233, 233, 233, 1) 50%);
+    overflow-x: hidden;
+    cursor: pointer;
+    font-family: $nunito;
+}
+
+/* Textos (excepto footer) */
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: $nunito;
+    text-transform: uppercase;
+    font-weight: map-get($font-weights,bold);
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+
+p {
+    font-size: 1.6rem;
+    font-weight: map-get($font-weights,regular);
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/* WhatsApp flotante */
+
+.btn-whatsapp {
+    display: block;
+    font-size: 5rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 2rem;
+    line-height: 8rem;
+    text-align: center;
+    z-index: 999;
+    filter: grayscale(9);
+    
+
+    img {
+        width: 15rem;
+    }
+
+    &:hover {
+        filter: grayscale(0);
+        transition: .5s ease-in-out;
+    }
+
+}
+
+
+
+/* Header & Nav */
+
+.header__top {
+    text-align: right;
+    background-color: $negro;
+    color: #fff;
+    height: auto;
+
+    p {
+        padding: .5rem;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        padding-right: 2rem;
+    }
+}
+
+.header__navbar {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: map-get($font-weights,medium);
+    font-family: $nunito;
+
+
+    li {
+        display: flex;
+        list-style-type: none;
+        padding: 1rem;
+
+
+    }
+
+    a {
+        color: #999999;
+
+        &:hover,
+        &:focus {
+            transition: 0.5s;
+            color: $negro;
+        }
+    }
+
+
+
+    .bg-light,
+    .navbar-collapse,
+    .navbar_color {
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: 0;
+
+    }
+
+    .toggler {
+        font-size: 3rem;
+        padding: .5rem;
+    }
+
+    .navbar__menu {
+        width: 100% !important;
+        justify-content: space-around;
+
+        .active {
+            color: $negro;
+            border-bottom: .2rem solid $aqua;
+        }
+
+        .menu__wp {
+            background-color: $rosa;
+            padding: 1rem;
+            border: 1px solid $rosa;
+            border-radius: 2rem 1rem;
+            
+
+            a {
+                color: $negro;
+            }
+
+            &:hover {
+                background-color: $negro;
+                border: 1px solid $negro;
+                transition: .5s;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+}
+
+
+/* Foooter */
+
+.footer {
+    background-color: $negro;
+    text-align: center;
+    color: $gris;
+    border: $aqua solid 1rem;
+
+    i {
+        color: #ffffff;
+    }
+
+    .footer__navbar {
+        text-decoration: none;
+        display: flex;
+        text-transform: uppercase;
+        justify-content: space-around;
+        padding: 1.4rem;
+        font-size: 1.4rem;
+        font-weight: map-get($font-weights,medium);        flex-wrap: wrap;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .footer__text {
+        border-bottom: #C9D6DF .1rem solid;
+        border-top: #C9D6DF .1rem solid;
+        padding: 1.4rem;
+
+        p {
+            margin: auto;
+        }
+    }
+
+    .footer__logos {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 1rem;
+
+    }
+
+    .footer__logos__img {
+        width: 12rem;
+        margin-bottom: 1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .footer__logos__social a {
+        filter: opacity(0.3);
+
+        &:hover,
+        &:focus {
+            filter: opacity(0.9);
+            transition: 1s;
+        }
+    }
+
+    .footer__copyright {
+        height: auto;
+        text-align: center;
+        color: #000;
+        background-color: $aqua;
+        padding: .5rem;
+
+        p {
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+    }
+
+}

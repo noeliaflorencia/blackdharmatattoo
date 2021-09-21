@@ -1,0 +1,246 @@
+/* Banner */
+
+.index {
+    margin: 0 2rem;
+
+    .index__banner {
+        display: flex;
+        border-radius: 2rem .5rem;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            font-family: $roboto;
+            line-height: 4rem;
+        }
+
+
+        h2 {
+            font-weight: map-get($font-weights,medium);
+            color: $rosa;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .index__banner__text {
+        padding: 1rem;
+        color: #212529;
+        padding-left: 1rem;
+    }
+
+
+    .carousel-inner {
+        max-height: 40rem;
+        max-width: 60rem;
+        margin-left: 2rem;
+
+    }
+}
+
+.button {
+    background-color: #212529;
+    @include button-dharma;
+    @include button-dharma--after ($aqua);
+}
+
+.button--form {
+    background-color: $rosa;
+    border:none;
+    font-size:1.4rem;
+
+    &:hover {
+        background-color: #fff;
+        transition: .5s;
+    }
+}
+
+/* Servicios */
+
+.index-servicios {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: $negro;
+    padding: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+
+    .index-servicios__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            color: #fff;
+            
+        }
+
+        img {
+            width: 7rem;
+            filter: invert(9)
+        }
+    }
+
+
+}
+
+/* Estudio */
+
+.index-estudio {
+    padding: 2rem;
+    padding-top: 5rem;
+
+
+    .index-estudio__video {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 50rem;
+            border-radius: 5rem 2rem;
+            align-items: center;
+
+
+        }
+    }
+
+    .index-carrusel__texto {
+        margin: 2rem;
+    }
+
+
+    .index-carrusel__btn {
+        margin-top: 3.5rem;
+        margin-bottom: 2rem;
+
+        a {
+            color: $negro;
+            text-decoration: none;
+            background-color: $aqua;
+            padding: 1.4rem;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+            &:hover,
+            &:focus {
+                background-color: $rosa;
+                transition: .5s;
+                color: $gris;
+            }
+        }
+    }
+
+}
+
+/* Reviews */
+
+.index-reviews {
+    margin-top: 3rem;
+    text-align: center;
+
+    h3 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+
+    .index-reviews__card {
+        @include card; 
+        
+
+        &:after {
+            content: "";
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: .7rem;
+            left: .7rem;
+            transition: 0.2s;
+            background-color: $rosa;
+            border-radius: 3rem 1rem;
+        }
+
+    
+        h2 {
+            font-size: 1.8rem;
+            line-height: 1;
+            letter-spacing: .1rem;
+            margin: 2rem 0;
+            transition: color .45s ease;
+            text-transform: uppercase;
+            transition: color .45s ease;
+            border-top: 1px solid $negro;
+            padding: 1rem;
+
+        }
+
+       
+
+        p {
+            color: $negro;
+            line-height: 1.8;
+
+        }
+
+
+    }
+}
+
+/* GrowShop */
+
+.index-weedside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem .5rem;
+    margin: 2rem;
+
+
+    .index-weedside__img {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 20rem;
+            margin: 1rem;
+        }
+
+    }
+
+
+}
+
+
+
+/* Form contacto */
+
+.index-contacto {
+    background: rgb(121, 220, 203);
+    background: linear-gradient(0deg, rgba(121, 220, 203, 1) 0%, rgba(251, 159, 180, 1) 50%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    form {
+        font-family: $nunito;
+        font-weight: map-get($font-weights,medium);
+        font-size: 1.6rem;
+
+        input,
+        textarea {
+            font-family: $nunito;
+            font-weight: 300;
+        }
+    }
+
+    .index-contacto__map {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,52 @@
+.main-artistas {
+    display: flex;
+    flex-direction: column;
+    margin:2rem 1rem;
+
+    a {
+        color: #fff;
+        background-color: $rosa;
+        padding: 1rem;
+        font-size: 1.8rem;
+        border: 1px solid $rosa;
+        border-radius: 1rem .5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    }
+
+    .main-artistas__card {
+        @include card;
+        height: 50rem;
+        margin:2rem 0;
+
+        h2 {
+            
+            padding: 3rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    .main-artistas__card--alan-reilly {
+        @include card-after($background-color-card:none, $background-card:url("https://i.ibb.co/L8rc0hh/20210814-203115.jpg"));
+    }
+
+    .main-artistas__card--adrian-mushrooms {
+        @include card-after($background-color-card:none, $background-card:url("https://i.ibb.co/9Z8ZVMv/20210814-203115.jpg"));
+    }
+
+    .main-artistas__card--gabriel-gonzalez {
+        @include card-after($background-color-card:none, $background-card:url("https://i.ibb.co/D5crRw8/20210814-203115.jpg"));
+    }
+
+    .main-artistas__card--gordo-satanico {
+        @include card-after($background-color-card:none, $background-card:url("https://i.ibb.co/ncTDp9y/20210814-203115.jpg"));
+    }
+
+    .main-artistas__card--jonhy-trece {
+        @include card-after($background-color-card:none, $background-card:url("https://i.ibb.co/g9Ksj8n/20210814-203115.jpg"));
+    }
+
+    .main-artistas__card--nico-viegas {
+        @include card-after($background-color-card:none, $background-card:url("https://i.ibb.co/4pChPkK/20210814-203115.jpg"));
+    }
+}
