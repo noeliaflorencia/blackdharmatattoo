@@ -68,7 +68,6 @@ $font-weights: ("regular": 300, "medium": 700, "bold": 900);
 
     text-align: center;
     border-radius: 3rem 1rem;
-    margin: 1rem;
     padding: 1.3rem 2rem 1.3rem;
     outline: 0;
     border: .2rem solid $negro;
@@ -94,6 +93,7 @@ $font-weights: ("regular": 300, "medium": 700, "bold": 900);
         background-color: $background-color-card;
         background: $background-card;
         border-radius: 3rem 1rem;
+    
     }
 
     &:hover:after {

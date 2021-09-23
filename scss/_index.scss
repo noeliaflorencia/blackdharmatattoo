@@ -8,6 +8,7 @@
         border-radius: 2rem .5rem;
         justify-content: space-around;
         align-items: center;
+        
 
         h1 {
             font-family: $roboto;
@@ -36,11 +37,6 @@
 
     }
 
-    .banner__img {
-        img {
-            width: 100%;
-        }
-    }
 }
 
 .button {
