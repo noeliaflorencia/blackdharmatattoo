@@ -33,10 +33,7 @@
     .carousel-inner {
         max-height: 40rem;
         max-width: 60rem;
-        margin-left: 2rem;
-
     }
-
 }
 
 .button {
@@ -62,8 +59,8 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background: rgb(48,52,63);
-background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
+    background: rgb(48, 52, 63);
+    background: linear-gradient(180deg, rgba(48, 52, 63, 1) 0%, rgba(31, 33, 40, 1) 64%);
     padding: 2rem;
     margin: 2rem 0;
     flex-wrap: wrap;
@@ -103,7 +100,7 @@ background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
         align-items: center;
 
         img {
-            border-radius:2rem;
+            border-radius: 2rem;
             align-items: center;
         }
     }
@@ -144,7 +141,7 @@ background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
 
     .index-reviews__card {
         @include card;
-        margin:1rem;
+        margin: 1rem;
 
 
         &:after {
