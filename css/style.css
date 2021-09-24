@@ -12,7 +12,6 @@ html {
   font-size: 62.5%;
   /* cambia la base de 16px a 10px */
   color: #30343F;
-  min-width: 37.5rem;
 }
 
 body {
@@ -20,8 +19,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, #e9e9e9));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e9e9e9 50%);
   overflow-x: hidden;
-  cursor: auto;
   font-family: "Nunito", sans-serif;
+  cursor: auto;
 }
 
 /* Textos (excepto footer) */
@@ -122,12 +121,10 @@ a:active {
 }
 
 .header__navbar a {
-  color: #999999;
+  color: #30343F;
 }
 
 .header__navbar a:hover, .header__navbar a:focus {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   color: #30343F;
 }
 
@@ -155,30 +152,32 @@ a:active {
 }
 
 .header__navbar .navbar__menu .menu__wp {
-  background-color: #FB9FB4;
+  background-color: #30343F;
   padding: 1rem;
-  border: 1px solid #FB9FB4;
+  border: 1px solid #30343F;
   border-radius: 2rem 1rem;
 }
 
 .header__navbar .navbar__menu .menu__wp a {
-  color: #30343F;
+  color: #fff;
 }
 
 .header__navbar .navbar__menu .menu__wp:hover {
-  background-color: #30343F;
-  border: 1px solid #30343F;
+  background-color: #79DCCB;
+  border: 1px solid #79DCCB;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .header__navbar .navbar__menu .menu__wp:hover a {
-  color: #fff;
+  color: #30343F;
 }
 
 /* Foooter */
 .footer {
-  background-color: #30343F;
+  background: #30343f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#30343f), color-stop(64%, #1f2128));
+  background: linear-gradient(180deg, #30343f 0%, #1f2128 64%);
   text-align: center;
   color: #E9E9E9;
   border: #79DCCB solid 1rem;
@@ -378,7 +377,9 @@ a:active {
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #30343F;
+  background: #30343f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#30343f), color-stop(64%, #1f2128));
+  background: linear-gradient(180deg, #30343f 0%, #1f2128 64%);
   padding: 2rem;
   margin: 2rem 0;
   -ms-flex-wrap: wrap;
@@ -408,16 +409,18 @@ a:active {
   width: 7rem;
   -webkit-filter: invert(9);
           filter: invert(9);
+  margin-top: 1rem;
 }
 
 /* Estudio */
 .index-estudio {
   padding: 2rem;
-  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .index-estudio .index-estudio__video {
-  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,39 +433,33 @@ a:active {
 }
 
 .index-estudio .index-estudio__video img {
-  height: 50rem;
-  border-radius: 5rem 2rem;
+  border-radius: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.index-estudio .index-carrusel__texto {
-  margin: 2rem;
+.index-estudio .index-estudio__texto {
+  padding: 4rem;
+  vertical-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.index-estudio .index-carrusel__btn {
-  margin-top: 3.5rem;
-  margin-bottom: 2rem;
+.index-estudio .index-estudio__texto p {
+  font-size: 2rem;
 }
 
-.index-estudio .index-carrusel__btn a {
-  color: #30343F;
-  text-decoration: none;
-  background-color: #79DCCB;
-  padding: 1.4rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  border-radius: 1rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.index-estudio .index-carrusel__btn a:hover, .index-estudio .index-carrusel__btn a:focus {
-  background-color: #FB9FB4;
-  -webkit-transition: .5s;
-  transition: .5s;
-  color: #E9E9E9;
+.index-estudio .index-estudio__texto .texto__bold {
+  font-weight: 700;
 }
 
 /* Reviews */
@@ -492,6 +489,7 @@ a:active {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   color: #fff;
+  margin: 1rem;
 }
 
 .index-reviews .index-reviews__card:after {

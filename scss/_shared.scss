@@ -119,11 +119,11 @@ a:active {
     }
 
     a {
-        color: #999999;
+        color: $negro;
 
         &:hover,
         &:focus {
-            transition: 0.5s;
+           
             color: $negro;
         }
     }
@@ -153,23 +153,23 @@ a:active {
         }
 
         .menu__wp {
-            background-color: $rosa;
+            background-color: $negro;
             padding: 1rem;
-            border: 1px solid $rosa;
+            border: 1px solid $negro;
             border-radius: 2rem 1rem;
             
 
             a {
-                color: $negro;
+                color: #fff;
             }
 
             &:hover {
-                background-color: $negro;
-                border: 1px solid $negro;
+                background-color: $aqua;
+                border: 1px solid $aqua;
                 transition: .5s;
 
                 a {
-                    color: #fff;
+                    color: $negro;
                 }
             }
 
@@ -181,7 +181,8 @@ a:active {
 /* Foooter */
 
 .footer {
-    background-color: $negro;
+    background: rgb(48,52,63);
+background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
     text-align: center;
     color: $gris;
     border: $aqua solid 1rem;

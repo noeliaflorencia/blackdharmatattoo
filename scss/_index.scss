@@ -8,7 +8,7 @@
         border-radius: 2rem .5rem;
         justify-content: space-around;
         align-items: center;
-        
+
 
         h1 {
             font-family: $roboto;
@@ -17,7 +17,7 @@
 
 
         h2 {
-            font-weight: map-get($font-weights,medium);
+            font-weight: map-get($font-weights, medium);
             color: $rosa;
             margin-bottom: 2.5rem;
         }
@@ -47,8 +47,8 @@
 
 .button--form {
     background-color: $rosa;
-    border:none;
-    font-size:1.4rem;
+    border: none;
+    font-size: 1.4rem;
 
     &:hover {
         background-color: #fff;
@@ -62,7 +62,8 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: $negro;
+    background: rgb(48,52,63);
+background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
     padding: 2rem;
     margin: 2rem 0;
     flex-wrap: wrap;
@@ -76,12 +77,13 @@
             font-size: 1.8rem;
             margin: 1rem 0;
             color: #fff;
-            
+
         }
 
         img {
             width: 7rem;
-            filter: invert(9)
+            filter: invert(9);
+            margin-top: 1rem;
         }
     }
 
@@ -92,51 +94,39 @@
 
 .index-estudio {
     padding: 2rem;
-    padding-top: 5rem;
+    display: flex;
 
 
     .index-estudio__video {
-        margin: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
         img {
-            height: 50rem;
-            border-radius: 5rem 2rem;
+            border-radius:2rem;
             align-items: center;
-
-
         }
     }
 
-    .index-carrusel__texto {
-        margin: 2rem;
-    }
+    .index-estudio__texto {
+        padding: 4rem;
+        vertical-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
+        p {
+            font-size: 2rem;
 
-    .index-carrusel__btn {
-        margin-top: 3.5rem;
-        margin-bottom: 2rem;
+        }
 
-        a {
-            color: $negro;
-            text-decoration: none;
-            background-color: $aqua;
-            padding: 1.4rem;
-            font-size: 1.6rem;
-            text-transform: uppercase;
-            border-radius: 1rem;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
-            &:hover,
-            &:focus {
-                background-color: $rosa;
-                transition: .5s;
-                color: $gris;
-            }
+        .texto__bold {
+            font-weight: map-get($font-weights, medium);
         }
     }
+
+
+
 
 }
 
@@ -153,8 +143,9 @@
 
 
     .index-reviews__card {
-        @include card; 
-        
+        @include card;
+        margin:1rem;
+
 
         &:after {
             content: "";
@@ -169,7 +160,7 @@
             border-radius: 3rem 1rem;
         }
 
-    
+
         h2 {
             font-size: 1.8rem;
             line-height: 1;
@@ -183,7 +174,7 @@
 
         }
 
-       
+
 
         p {
             color: $negro;
@@ -232,7 +223,7 @@
 
     form {
         font-family: $nunito;
-        font-weight: map-get($font-weights,medium);
+        font-weight: map-get($font-weights, medium);
         font-size: 1.6rem;
 
         input,
