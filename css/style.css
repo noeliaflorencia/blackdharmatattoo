@@ -600,181 +600,97 @@ a:active {
   margin: 0 auto;
 }
 
-.box-tattoo .box-tattoo__img img {
-  width: 100%;
-}
-
-.main-artistas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 2rem 1rem;
-}
-
-.main-artistas a {
-  color: #fff;
-  background-color: #FB9FB4;
-  padding: 1rem;
-  font-size: 1.8rem;
-  border: 1px solid #FB9FB4;
-  border-radius: 1rem .5rem;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.main-artistas .main-artistas__card {
-  text-align: center;
-  border-radius: 3rem 1rem;
-  margin: 1rem;
-  padding: 1.3rem 2rem 1.3rem;
-  outline: 0;
-  border: 0.2rem solid #30343F;
+.card {
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  color: #fff;
-  height: 50rem;
-  margin: 2rem 0;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 3rem;
 }
 
-.main-artistas .main-artistas__card h2 {
-  padding: 3rem;
-  font-size: 1.8rem;
-}
-
-.main-artistas .main-artistas__card--alan-reilly:after {
+.card:before,
+.card:after {
   content: "";
-  width: 100%;
-  z-index: -1;
   position: absolute;
-  height: 100%;
-  top: .7rem;
-  left: .7rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: none;
-  background: url("https://i.ibb.co/L8rc0hh/20210814-203115.jpg");
-  border-radius: 3rem 1rem;
-}
-
-.main-artistas .main-artistas__card--alan-reilly:hover:after {
   top: 0;
   left: 0;
-  color: #30343F;
-}
-
-.main-artistas .main-artistas__card--adrian-mushrooms:after {
-  content: "";
   width: 100%;
-  z-index: -1;
-  position: absolute;
   height: 100%;
-  top: .7rem;
-  left: .7rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: none;
-  background: url("https://i.ibb.co/9Z8ZVMv/20210814-203115.jpg");
-  border-radius: 3rem 1rem;
+  border-radius: 4px;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
 }
 
-.main-artistas .main-artistas__card--adrian-mushrooms:hover:after {
+.card:hover:before {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover:after {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .imgBx {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card:hover .imgBx {
+  bottom: 80px;
+}
+
+.card .imgBx img {
+  position: absolute;
   top: 0;
   left: 0;
-  color: #30343F;
-}
-
-.main-artistas .main-artistas__card--gabriel-gonzalez:after {
-  content: "";
   width: 100%;
-  z-index: -1;
-  position: absolute;
   height: 100%;
-  top: .7rem;
-  left: .7rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: none;
-  background: url("https://i.ibb.co/D5crRw8/20210814-203115.jpg");
-  border-radius: 3rem 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.main-artistas .main-artistas__card--gabriel-gonzalez:hover:after {
-  top: 0;
-  left: 0;
-  color: #30343F;
-}
-
-.main-artistas .main-artistas__card--gordo-satanico:after {
-  content: "";
-  width: 100%;
-  z-index: -1;
+.card .details {
   position: absolute;
-  height: 100%;
-  top: .7rem;
-  left: .7rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: none;
-  background: url("https://i.ibb.co/ncTDp9y/20210814-203115.jpg");
-  border-radius: 3rem 1rem;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  text-align: center;
 }
 
-.main-artistas .main-artistas__card--gordo-satanico:hover:after {
-  top: 0;
-  left: 0;
-  color: #30343F;
+.card .details h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #777;
+  text-transform: uppercase;
 }
 
-.main-artistas .main-artistas__card--jonhy-trece:after {
-  content: "";
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: .7rem;
-  left: .7rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: none;
-  background: url("https://i.ibb.co/g9Ksj8n/20210814-203115.jpg");
-  border-radius: 3rem 1rem;
-}
-
-.main-artistas .main-artistas__card--jonhy-trece:hover:after {
-  top: 0;
-  left: 0;
-  color: #30343F;
-}
-
-.main-artistas .main-artistas__card--nico-viegas:after {
-  content: "";
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: .7rem;
-  left: .7rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: none;
-  background: url("https://i.ibb.co/4pChPkK/20210814-203115.jpg");
-  border-radius: 3rem 1rem;
-}
-
-.main-artistas .main-artistas__card--nico-viegas:hover:after {
-  top: 0;
-  left: 0;
-  color: #30343F;
+.card .details h2 span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FB9FB4;
+  display: block;
+  margin-top: 5px;
 }
 
 .main_contacto__texto {
