@@ -58,14 +58,18 @@
 
 /* Servicios */
 
+.index-servicios__container {
+    padding: 2rem;
+}
+
 .index-servicios {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    margin: 2rem;
     flex-wrap: wrap;
     border-radius: 4rem 1rem;
     background-color: $aqua;
+    margin-bottom:2rem;
 
     .index-servicios__icon {
         display: flex;
@@ -81,15 +85,15 @@
 
         img {
             width: 7rem;
-             margin-top: 1rem;
-           
+            margin-top: 1rem;
+
         }
 
         &:hover {
             filter: invert(9);
             transition: .5s;
         }
-     
+
     }
 
 
@@ -108,7 +112,7 @@
         align-items: center;
 
         img {
-            border-radius:2rem;
+            border-radius: 2rem;
             align-items: center;
         }
     }
@@ -149,7 +153,7 @@
 
     .index-reviews__card {
         @include card;
-        margin:1rem;
+        margin: 1rem;
 
 
         &:after {

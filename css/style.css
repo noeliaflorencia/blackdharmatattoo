@@ -12,6 +12,7 @@ html {
   font-size: 62.5%;
   /* cambia la base de 16px a 10px */
   color: #30343F;
+  overflow-x: hidden;
 }
 
 body {
@@ -369,6 +370,10 @@ a:active {
 }
 
 /* Servicios */
+.index-servicios__container {
+  padding: 2rem;
+}
+
 .index-servicios {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,11 +381,11 @@ a:active {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 2rem;
-  margin: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-radius: 4rem 1rem;
   background-color: #79DCCB;
+  margin-bottom: 2rem;
 }
 
 .index-servicios .index-servicios__icon {
