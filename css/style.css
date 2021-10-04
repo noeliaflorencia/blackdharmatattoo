@@ -378,7 +378,7 @@ a:active {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 2rem;
-  margin: 2rem 0;
+  margin: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-radius: 4rem 1rem;
