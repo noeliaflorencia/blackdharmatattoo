@@ -62,11 +62,11 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background: rgb(48,52,63);
-background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
     padding: 2rem;
     margin: 2rem 0;
     flex-wrap: wrap;
+    border-radius: 4rem 1rem;
+    background-color: $aqua;
 
     .index-servicios__icon {
         display: flex;
@@ -76,15 +76,21 @@ background: linear-gradient(180deg, rgba(48,52,63,1) 0%, rgba(31,33,40,1) 64%);
         h2 {
             font-size: 1.8rem;
             margin: 1rem 0;
-            color: #fff;
+            color: #000;
 
         }
 
         img {
             width: 7rem;
-            filter: invert(9);
-            margin-top: 1rem;
+             margin-top: 1rem;
+           
         }
+
+        &:hover {
+            filter: invert(9);
+            transition: .5s;
+        }
+     
     }
 
 
