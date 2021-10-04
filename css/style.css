@@ -101,7 +101,6 @@ a:active {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  padding-right: 2rem;
 }
 
 .header__navbar {
@@ -374,7 +373,6 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 2rem;
