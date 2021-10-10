@@ -69,7 +69,7 @@
                                 turno</a></div>
                     </div>
                 </div>
-                <div data-aos="fade-up-right" id="carouselExampleControls" class="index-carrusel__slide carousel slide col-12 col-lg-8"
+                <div data-aos="fade-up-right" id="carouselExampleControls" class="index-carrusel__slide carousel d-none d-md-block col-lg-8"
                     data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -209,20 +209,24 @@
 
     </section>
 
-    <div data-aos="fade-up" class="container-fluid">
+    <div class="container-fluid">
         <div class="row index-weedside justify-content-center">
-            <div class="index-weedside__img col-10 col-md-4">
+            <div data-aos="slide-right" class="index-weedside__img col-10 col-md-4">
                 <img src="imagenes/weedside_main_color.png" alt="Tienda WeedSide GrowShop">
             </div>
-            <div class="col-10 col-md-3 justify-content-center">
+            <div data-aos="slide-left" class="col-10 col-md-3 justify-content-center">
                 <div class="button"> <a href="#" target="blank">Entrar a la tienda</a></div>
             </div>
         </div>
     </div>
 
 
+<section class="contenedor__form">
+    <div data-aos="fade-up" class="container-fluid index-contacto">
+        <div class="row index-contacto__titulo">
+            <h2>¿Dudas? ¿Sugerencias? ¡Contactanos!</h2>
 
-    <section data-aos="fade-up" class="container-fuid index-contacto">
+        </div>
         <div class="row">
             <div class="col-12 col-md-6">
                 <form class="index-contacto__form container">
@@ -258,10 +262,11 @@
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container-fluid footer__color">
             <div class="row aling-items-center justify-content-center">
                 <div class="footer__navbar">
                     <div class="col-12 col-lg-2 navbar__item-footer">

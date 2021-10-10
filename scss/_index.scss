@@ -33,7 +33,6 @@
     .carousel-inner {
         max-height: 40rem;
         max-width: 60rem;
-        margin-left: 2rem;
 
     }
 
@@ -69,7 +68,7 @@
     flex-wrap: wrap;
     border-radius: 4rem 1rem;
     background-color: $aqua;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 
     .index-servicios__icon {
         display: flex;
@@ -118,7 +117,7 @@
     }
 
     .index-estudio__texto {
-        padding: 2rem;
+        padding: 1rem;
         vertical-align: center;
         display: flex;
         justify-content: center;
@@ -144,6 +143,10 @@
 .index-reviews {
     margin-top: 3rem;
     text-align: center;
+
+    h2 {
+        font-size:2rem;
+    }
 
     h3 {
         font-size: 1.6rem;
@@ -224,16 +227,28 @@
 
 /* Form contacto */
 
+.contenedor__form {
+    padding: 0 2rem;
+}
+
 .index-contacto {
-    background: rgb(121, 220, 203);
-    background: linear-gradient(0deg, rgba(121, 220, 203, 1) 0%, rgba(251, 159, 180, 1) 50%);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+
+    background-color: $aqua;
+
+    .index-contacto__titulo {
+        h2 {
+            padding-left: 3rem;
+            padding-top:3rem;
+            font-size:1.8rem;
+        }
+    }
 
     form {
         font-family: $nunito;
         font-weight: map-get($font-weights, medium);
         font-size: 1.6rem;
+        padding: 2rem;
+
 
         input,
         textarea {

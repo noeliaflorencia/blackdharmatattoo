@@ -17,9 +17,8 @@ $font-weights: ("regular": 300, "medium": 700, "bold": 900);
 
 @mixin button-dharma {
 
-
     letter-spacing: .1rem;
-    padding: 1.3rem 2rem 1.3rem;
+    padding: 1.3rem;
     outline: 0;
     border: .2rem solid $negro;
     border-radius: 2rem 1rem;
@@ -32,7 +31,7 @@ $font-weights: ("regular": 300, "medium": 700, "bold": 900);
     font-family: $nunito;
     font-weight: map-get($font-weights,medium);
     color: $negro;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
 
 
