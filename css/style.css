@@ -233,12 +233,12 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   width: auto;
-  margin: 1rem;
+  margin: 0 5rem 1rem 5rem;
 }
 
 .footer .footer__logos__img {
   width: 12rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .footer .footer__logos__img img {
@@ -447,7 +447,7 @@ a:active {
 }
 
 .index-estudio .index-estudio__texto {
-  padding: 4rem;
+  padding: 2rem;
   vertical-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,7 +462,7 @@ a:active {
 }
 
 .index-estudio .index-estudio__texto p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .index-estudio .index-estudio__texto .texto__bold {
