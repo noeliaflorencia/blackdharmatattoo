@@ -409,6 +409,7 @@ a:active {
 /* Banner */
 .index {
   background-color: #FB9FB4;
+  height: auto;
 }
 
 .index .index__banner {
