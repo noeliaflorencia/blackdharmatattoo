@@ -90,6 +90,7 @@ a:active {
 .button {
 
     @include button-dharma ($rosa);
+    margin:1rem;
     
 }
 

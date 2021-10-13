@@ -181,6 +181,7 @@ a:active {
   position: relative;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
+  margin: 1rem;
 }
 
 .button a {
