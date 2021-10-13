@@ -131,7 +131,7 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
 @media screen and (min-width: 1920px) {
 
     .index {
-        height: 100vh;
+        height: 90vh;
 
     }
 
@@ -154,7 +154,7 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
 @media screen and (max-width: 1281px) {
 
     .index {
-        height: 100vh;
+        height: 90vh;
 
     }
 
@@ -180,9 +180,10 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
 @media screen and (max-width: 1025px) {
 
     .index {
-        height: 100vh;
+        height: 90vh;
 
     }
+
     .index__banner {
         h1 {
             font-size: 10rem;
@@ -223,6 +224,26 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
 
         h2 {
             font-size: 3rem;
+        }
+    }
+
+    .btn-whatsapp {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    
+
+    .index__banner {
+        h1 {
+            font-size: 7rem;
+            line-height: 6rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
         }
     }
 

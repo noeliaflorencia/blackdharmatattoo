@@ -1,9 +1,8 @@
 /* Banner */
 
 .index {
-
-    width: 100vw;
     background-color: $rosa;
+   
 
     .index__banner {
         width: 80vw;
@@ -11,9 +10,6 @@
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
-        
-       
-       
 
 
         h1 {
@@ -42,10 +38,9 @@
 
     .index__banner__img {
         img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 80vh;
+            object-fit: cover;
+      object-position: center center;
+      padding: 3rem;
         }
     }
 
@@ -56,6 +51,19 @@
         font-weight: map-get($font-weights, medium);
     }
 
+    .index__banner__logo {
+
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+
+        img {
+           width: 17rem;
+           margin: 0 auto;
+      
+        }
+
+    }
 
 }
 
