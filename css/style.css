@@ -718,11 +718,6 @@ a:active {
   color: #30343F;
 }
 
-.gallery:hover .gallery__image {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-}
-
 .gallery__column {
   display: -webkit-box;
   display: -ms-flexbox;
