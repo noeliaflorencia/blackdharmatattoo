@@ -3,7 +3,8 @@
 $rosa: #FB9FB4;
 $negro: #30343F;
 $gris: #E9E9E9;
-$aqua: #79DCCB;
+$aqua: #B9D2B1;
+
 
 
 
@@ -15,52 +16,74 @@ $roboto: 'Roboto',
 sans-serif;
 $font-weights: ("regular": 300, "medium": 700, "bold": 900);
 
-@mixin button-dharma {
+/* Estilos */
+$sombra: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+@mixin button-dharma ($background-button) {
 
     letter-spacing: .1rem;
-    padding: 1.3rem;
-    outline: 0;
-    border: .2rem solid $negro;
-    border-radius: 2rem 1rem;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    padding: 1.6rem;
+    background-color: $background-button;
     text-transform: uppercase;
     font-family: $nunito;
-    font-weight: map-get($font-weights,medium);
-    color: $negro;
-    font-size: 1.6rem;
+    font-weight: map-get($font-weights, medium);
+    font-size: 1.8rem;
     text-align: center;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    display: inline-block;
+    position: relative;
+    touch-action: manipulation;
+ 
+
+    a {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+    }
+
+    &:before {
+        animation: .5s step-end forwards;
+        backface-visibility: hidden;
+        background-color: $negro;
+        clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateZ(0);
+        transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+        width: 100%;
+
+
+    }
+
+    &:hover:before {
+        animation:  0s step-start forwards;
+        clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+    }
 
 
 }
 
-@mixin button-dharma--after ($background-button) {
 
-    &:after {
-        content: "";
-        width: 100%;
-        z-index: -1;
-        position: absolute;
-        height: 100%;
-        top: .7rem;
-        left: .7rem;
-        transition: 0.2s;
-        background-color: $background-button;
-        border-radius: 2rem 1rem;
-    }
+@mixin button-form {
 
-    &:hover:after {
-        top: 0;
-        left: 0;
-        color: $negro;
-    }
+    letter-spacing: .1rem;
+    padding: 1.4rem;
+    background-color: $negro;
+    text-transform: uppercase;
+    font-family: $nunito;
+    font-weight: map-get($font-weights, medium);
+    font-size: 1.4rem;
+    text-align: center;
+    border:none;
+    margin-right:1rem;
+    color:#fff;
+    
 
-    a {
-        color: $negro;
-    }
+    
 
 }
 
@@ -81,7 +104,7 @@ $font-weights: ("regular": 300, "medium": 700, "bold": 900);
 
 }
 
-@mixin card-after ($background-color-card,$background-card:none) {
+@mixin card-after ($background-color-card, $background-card:none) {
     &:after {
         content: "";
         width: 100%;
@@ -94,12 +117,131 @@ $font-weights: ("regular": 300, "medium": 700, "bold": 900);
         background-color: $background-color-card;
         background: $background-card;
         border-radius: 3rem 1rem;
-    
+
     }
 
     &:hover:after {
         top: 0;
         left: 0;
         color: $negro;
-    }   
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+
+    .index {
+        height: 100vh;
+
+    }
+
+    .index__banner {
+        
+
+        h1 {
+            font-size: 20rem;
+            line-height: 17rem;
+
+        }
+
+        h2 {
+            font-size: 5rem;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1281px) {
+
+    .index {
+        height: 100vh;
+
+    }
+
+    .index__banner {
+        
+
+        h1 {
+            font-size: 13rem;
+            line-height: 10rem;
+
+
+        }
+
+        h2 {
+            font-size: 4rem;
+
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .index {
+        height: 100vh;
+
+    }
+    .index__banner {
+        h1 {
+            font-size: 10rem;
+            line-height: 8rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+   
+
+    .index__banner {
+        h1 {
+            font-size: 15rem;
+            line-height: 12rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 481px) {
+
+    
+
+    .index__banner {
+        h1 {
+            font-size: 9rem;
+            line-height: 7.5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .btn-whatsapp {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .index__banner {
+        h1 {
+            font-size: 5rem;
+            line-height: 4.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+
 }
