@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 361px) {
   .index__banner h1 {
     font-size: 7rem;
     line-height: 6rem;
@@ -81,16 +81,6 @@
   }
   .btn-whatsapp {
     visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .index__banner h1 {
-    font-size: 5rem;
-    line-height: 4.5rem;
-  }
-  .index__banner h2 {
-    font-size: 2rem;
   }
 }
 
@@ -467,21 +457,6 @@ a:active {
   color: #fff;
   letter-spacing: .1rem;
   font-weight: 700;
-}
-
-.index .index__banner__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem;
-}
-
-.index .index__banner__logo img {
-  width: 17rem;
-  margin: 0 auto;
 }
 
 /* Servicios */
