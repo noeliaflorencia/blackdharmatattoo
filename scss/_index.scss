@@ -18,6 +18,9 @@
             transition: .2s;
             transition-timing-function: ease-in-out;
             color: $negro;
+            font-size:10vw;
+            line-height: 8vw;
+            padding: .5rem 0;
 
 
         }
@@ -30,6 +33,7 @@
             transition: .3s;
             transition-timing-function: ease-in;
             color: $negro;
+            padding: .5rem 0;
 
 
 
@@ -98,6 +102,7 @@
 .index-estudio {
     box-shadow: $sombra;
     background-color: #fff;
+    
 
 
     .index-estudio__img {
@@ -140,14 +145,10 @@
     }
 
     .index-estudio__logos {
-
         
-
         img {
-            height: 18rem;
-            padding: 1rem 3rem 2rem 0;
-            
-
+            padding: 3rem;
+            max-height: 20rem;
         }
     }
 
@@ -155,129 +156,7 @@
 
 }
 
-/* Reviews */
-
-.index-reviews {
-
-    margin-top: 3rem;
-    text-align: center;
-    
-
-    h2 {
-        padding: 2rem;
-    }
-
-    h3 {
-        font-size: 1.6rem;
-        text-transform: uppercase;
-    }
-
-
-    .index-reviews__card {
-        
-        margin: 1rem;
-        padding: 3rem;
-        transition: 0.5s;
-        background-color: $aqua;
-
-        &:hover {
-            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-        }
-
-
-
-        h2 {
-            font-size: 1.8rem;
-            line-height: 1;
-            letter-spacing: .1rem;
-            margin: 2rem 0;
-            transition: color .45s ease;
-            text-transform: uppercase;
-            transition: color .45s ease;
-            border-top: 1px solid $negro;
-            padding: 1rem;
-
-        }
-
-
-        p {
-            color: $negro;
-            line-height: 1.8;
-
-        }
-
-    }
-
-    .index-reviews__card--rosa {
-        background-color: $rosa;
-    }
-}
-
-/* GrowShop */
-
-.index-weedside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem .5rem;
-    margin: 2rem;
-
-
-    .index-weedside__img {
-
-
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 100%;
-            padding: 1rem;
-        }
-
-    }
-
-
-}
-
-
-
-/* Form contacto */
-
-.contenedor__form {
-    padding: 0 2rem;
-}
-
-.index-contacto {
-
-    background-color: $aqua;
-
-    .index-contacto__titulo {
-        h2 {
-            padding-left: 3rem;
-            padding-top: 3rem;
-            font-size: 1.8rem;
-        }
-    }
-
-    form {
-        font-family: $nunito;
-        font-weight: map-get($font-weights, medium);
-        font-size: 1.6rem;
-        padding: 2rem;
-
-
-        input,
-        textarea {
-            font-family: $nunito;
-            font-weight: 300;
-        }
-    }
-
-    .index-contacto__map {
-        padding: 2rem;
-    }
-}
-
+/* Galería - Sólo desktop */
 
 .gallery {
     display: flex;
@@ -364,5 +243,137 @@
         opacity: 0;
         background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
         transition: .3s;
+    }
+}
+
+/* Reviews */
+
+.index-reviews {
+
+    margin-top: 3rem;
+    text-align: center;
+    
+
+    h2 {
+        padding: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+
+    .index-reviews__card {
+        
+        margin: 1rem;
+        padding: 3rem;
+        transition: 0.5s;
+        background-color: $aqua;
+
+        &:hover {
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+
+
+
+        h2 {
+            font-size: 1.8rem;
+            line-height: 1;
+            letter-spacing: .1rem;
+            margin: 2rem 0;
+            transition: color .45s ease;
+            text-transform: uppercase;
+            transition: color .45s ease;
+            border-top: 1px solid $negro;
+            padding: 1rem;
+
+        }
+
+
+        p {
+            color: $negro;
+            line-height: 1.8;
+
+        }
+
+        .card__icon {
+
+            i {
+
+            
+            font-size: 1.6rem;
+        }
+        }
+
+    }
+
+    .index-reviews__card--rosa {
+        background-color: $rosa;
+    }
+}
+
+/* GrowShop */
+
+.index-weedside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem .5rem;
+    margin: 2rem;
+
+
+    .index-weedside__img {
+
+
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            padding: 1rem;
+        }
+
+    }
+
+
+}
+
+
+
+/* Form contacto */
+
+.contenedor__form {
+    padding: 0 2rem;
+}
+
+.index-contacto {
+
+    background-color: $aqua;
+
+    .index-contacto__titulo {
+        h2 {
+            padding-left: 3rem;
+            padding-top: 3rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    form {
+        font-family: $nunito;
+        font-weight: map-get($font-weights, medium);
+        font-size: 1.6rem;
+        padding: 2rem;
+
+
+        input,
+        textarea {
+            font-family: $nunito;
+            font-weight: 300;
+        }
+    }
+
+    .index-contacto__map {
+        padding: 2rem;
     }
 }

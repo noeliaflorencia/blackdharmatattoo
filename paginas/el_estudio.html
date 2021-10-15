@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/01c8ef825e.js" crossorigin="anonymous"></script>
-    <title>El estudio | Black Dharma Tattoo Studio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <title>Nuestro estudio @ S.A de Padua</title>
+    <meta name="description"
+        content="Salas totalmente privadas, para que tu experiencia de tatuarte sea cómoda y segura. ¿Sos tattoer? Consultanos x tu Box Tattoo">
+    <meta name="keywords" content="box tattoo, estudio tatuaje privado">
 </head>
 
 
@@ -39,7 +43,8 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item menu__item menu__wp">
-                            <a class="nav-link" href="https://api.whatsapp.com/send?phone=541126494987">Agendar un
+                            <a target="_blank" class="nav-link"
+                                href="https://api.whatsapp.com/send?phone=541126494987">Agendar un
                                 turno
                                 <i class="fab fa-whatsapp"></i></a>
                         </li>
@@ -49,110 +54,107 @@
         </nav>
     </header>
 
-    <div class="btn-whatsapp">
-        <a href="#" target="blank">
+    <div data-aos="fade-up-left" data-aos-delay="500" class="btn-grow d-none d-md-block">
+        <a href="#" target="_blank">
             <img src="../imagenes/WEED-STICKEr.png" alt="Boton ir a tienda Weedside Growhshop">
         </a>
     </div>
 
     <section class="index">
-        <div class="container index__banner">
-            <div class="index__banner row">
-                <div class="index__banner__text col-12 col-lg-4">
-                    <h1>Black Dharma</h1>
+        <div class="container-fluid">
+            <div class="row index__banner d-flex justify-content-start">
+                <div class="index__banner__text col-8">
+                    <h1 class="">Black Dharma</h1>
                     <h2>El estudio</h2>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <img class="img-fluid" src="../imagenes/satanico.png" alt="banner seccion estudio">
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="container">
-        <div class="row aling-items-center justify-content-center index-estudio">
-            <div class="index-estudio__video col-12 col-md-6 col-lg-4">
-                <img class="img-fluid" src="../imagenes/dharma_frente.png" alt="Frente de local Black Dharma Tattoo Studio">
+    <section data-aos="fade-up" class="container index-estudio section-estudio">
+        <div class="row aling-items-center justify-content-center index-estudio__texto--padding">
+            <div class="index-estudio__img col-12 col-md-7">
+                <img class="img-fluid" src="../imagenes/crew_full.png" alt="Crew Black Dharma">
             </div>
-            <div class="index-estudio__texto col-12 col-md-6">
-                <h2>Nosotros</h2>
+            <div class="index-estudio__texto text-lg-start col-12 col-md-4">
+                <h2 class="">Nosotros</h2>
                 <p>
                     Local de tatuajes y perforaciones. Influenciados por el amor al arte, música, pinturas,
-                    fotografía.</p><p class="texto__bold">Y sobre todo el amor.</p>
-                    
-                    <p>Nuestro staff se compone de artistas locales e invitados. Contamos con 4 salas totalmente privadas, para que tu experiencia sea única.</p>
-                    <p>Además, somos hogar de Weedside Growshop <i class="fas fa-cannabis"></i></p>
-                
+                    fotografía.</p>
+                <p class="texto__bold">Y sobre todo el amor.</p>
+
+                <p>Nuestro staff se compone de artistas locales e invitados. Contamos con 4 salas totalmente privadas,
+                    para que tu experiencia sea única.</p>
+            </div>
+        </div>
+        <div class="row aling-items-center justify-content-center">
+            <div class="col-12 col-md-6 text-lg-start index-estudio__texto">
+                <p>Compartirmos nuestro bello estudio con los amigues de Weedside Growhshop <i
+                        class="fas fa-cannabis"></i>.</p>
+                <p>Podés encontrar fertilizantes, sutratos, insecticidas y parafarnalia, entre otras cositas para tus
+                    cultivos.</p>
+                <p>Estamos ubicados en el centro de San Antonio de Padua, cerca de todos tus lugares favoritos.</p>
+                <div class="index-estudio__logos d-none d-lg-block">
+                    <img class="img-fluid" src="../imagenes/black_dharma_header_b.png"
+                        alt="Logo Black Dharma Tattoo en color negro">
+                    <img class="img-fluid" src="../imagenes/weed_logo_b.png"
+                        alt="Logo Weedside Growhshop en color negro">
+                </div>
+            </div>
+            <div class="index-estudio__img d-none d-md-block col-md-4">
+                <img class="img-fluid" src="../imagenes/exterior_local.png" alt="Exterior del estudio">
             </div>
         </div>
     </section>
 
-    <div class="container index-servicios__container>
+    <section data-aos="" class="container index-servicios__container">
         <div class="row">
             <div class="index-servicios">
-                <div class="index-servicios__icon col-6 col-md-3 justify-content-center aling-items-center">
+                <div data-aos="flip-left"
+                    class="index-servicios__icon servicios col-6 col-md-3 justify-content-center aling-items-center">
                     <img src="../imagenes/ink.svg" alt="icono tatuajes">
                     <h2>Tattoo</h2>
                 </div>
-                <div class="index-servicios__icon col-6 col-md-3 justify-content-center aling-items-center">
+                <div data-aos="flip-left"
+                    class="index-servicios__icon servicios col-6 col-md-3 justify-content-center aling-items-center">
                     <img src="../imagenes/piercing.svg" alt="icono piercing">
                     <h2>Piercing</h2>
                 </div>
-                <div class="index-servicios__icon col-6 col-md-3 justify-content-center aling-items-center">
+                <div data-aos="flip-left"
+                    class="index-servicios__icon servicios col-6 col-md-3 justify-content-center aling-items-center">
                     <img src="../imagenes/anchor.svg" alt="icono cuidados">
                     <h2>Cuidados</h2>
                 </div>
-                <div class="index-servicios__icon col-6 col-md-3 justify-content-center aling-items-center">
+                <div data-aos="flip-left"
+                    class="index-servicios__icon servicios col-6 col-md-3 justify-content-center aling-items-center">
                     <img src="../imagenes/studio.svg" alt="icono insumos">
                     <h2>Insumos</h2>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
+
 
     <div class="container">
-        <div id="carouselExampleControls"
-            class="index-carrusel__slide index-carrusel__slide--estudio carousel slide col-12" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../imagenes/carrusel_studio.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/carrusel_frente.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/carrusel_crew.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/carrusel_keka.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/carrusel_mushrooms.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+
     </div>
 
+<section data-aos="fade-up" class="contenedor_box">
     <div class="container-fluid">
         <article class="row box-tattoo">
             <div class="box-tattoo__texto col-12 col-md-6">
                 <h2>¿Estás buscando un lugar para atender a tus clientes?*</h2>
                 <p>Black Dharma te ofrece un espacio para que puedas realizar tu trabajo.</p>
                 <p>Contamos con salas totalmente privadas para alquilar por hora, por día o por mes.</p>
-                <p>Estamos ubicados en el centro de San Antonio de Padua, a sólo una cuadra de la estación del Tren Sarmiento.</p>
-                <p>Solicitanos información a través de mensaje privado en nuestro Instagram @BlackDharmaTattoo, o por WhatsApp al +54 11 2649 4987.</p>
+                <p>Estamos ubicados en el centro de San Antonio de Padua, a sólo una cuadra de la estación del Tren
+                    Sarmiento.</p>
+                <p>Solicitanos información a través de mensaje privado en nuestro Instagram @BlackDharmaTattoo, o
+                    por
+                    WhatsApp al +54 11 2649 4987.</p>
                 <p>*Unicamente para tatuadores profesionales.</p>
-               
+
             </div>
             <div class="box-tattoo__map col-12 col-md-6">
                 <iframe
@@ -160,18 +162,18 @@
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
-
     </div>
+    </section>
 
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container-fluid footer__color">
             <div class="row aling-items-center justify-content-center">
                 <div class="footer__navbar">
                     <div class="col-12 col-lg-2 navbar__item-footer">
                         <a href="../index.html">Inicio</a>
                     </div>
                     <div class="col-12 col-lg-2 navbar__item-footer">
-                        <a href="el_estudio.html">El estudio</a>
+                        <a href="el_estudio.html"><i class="fas fa-chevron-right"></i> El estudio</a>
                     </div>
                     <div class="col-12 col-lg-2 navbar__item-footer">
                         <a href="los_artistas.html">Los artistas</a>
@@ -185,71 +187,79 @@
                 </div>
             </div>
 
-            <div class="row footer__text">
+            <div class="row footer__text aling-items-center justify-content-center">
                 <p>
                     <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop"
-                        colors="primary:#ffffff,secondary:#08a88a" style="width:50px;height:50px">
+                        colors="primary:#ffffff,secondary:#B9D2B1" style="width:50px;height:50px">
                     </lord-icon>
                 </p>
                 <p>Volta 360 | San Antonio de Padua | Buenos Aires, Argentina</p>
                 <p>Lunes a Sábados - 11:00 hs a 20:00 hs</p>
+                <a class="button--footer" href="paginas/contacto.html">Cómo llegar</a>
+                <a class="button--footer" href="https://api.whatsapp.com/send?phone=541126494987">Agendar un
+                    turno</a>
             </div>
 
             <div class="row aling-items-center justify-content-center">
-                <div class="col-6 col-lg-4 footer__logos">
+                <div data-aos="flip-right" class="col-6 col-lg-4 footer__logos">
                     <div class="footer__logos__img">
                         <a href="#">
-                            <img src="../imagenes/black_dharma_footer_w.png" alt="Black Dharma Tattoo logo"></a>
+                            <img src="../imagenes/black_dharma_footer_w.png" alt="Black Dharma Tattoo logo blanco"></a>
                     </div>
-                    <div class="footer__logos__social">
-                        <a href="https://facebook.com/blackdharmatattoo">
+                    <div class="footer__logos__social social--tattoo">
+                        <a target="_blank" href="https://facebook.com/blackdharmatattoo">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://instagram.com/blackdharmatattoo">
+                        <a target="_blank" href="https://instagram.com/blackdharmatattoo">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#">
+                        <a target="_blank" href="#">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=541126494987">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=541126494987">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-lg-4 footer__logos">
+                <div data-aos="flip-right" class="col-6 col-lg-4 footer__logos">
                     <div class="footer__logos__img">
-                        <a href="#">
-                            <img src="../imagenes/weedside_footer_w.png" alt="Black Dharma Tattoo logo"></a>
+                        <a target="_blank" href="#">
+                            <img src="../imagenes/weedside_footer_w.png" alt="Weedside Growshop logo blanco"></a>
                     </div>
-                    <div class="footer__logos__social">
-                        <a href="#">
+                    <div class="footer__logos__social social--grow">
+                        <a target="_blank" href="#">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="httpss://instagram.com/weedsidegrow">
+                        <a target="_blank" href="httpss://instagram.com/weedsidegrow">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#">
+                        <a target="_blank" href="#">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="#">
+                        <a target="_blank" href="#">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="row footer__copyright">
-                <p><i class="fas fa-heart"></i> © Copyright 2021 @noeliaflorencia - Todos los derechos reservados <i
-                        class="fas fa-heart"></i></p>
+                <p><i class="fas fa-heart"></i> © Copyright 2021 @noeliaflorencia - Todos los
+                    derechos
+                    reservados <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
 
 
-    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://kit.fontawesome.com/01c8ef825e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 

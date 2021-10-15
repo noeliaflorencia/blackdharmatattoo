@@ -60,7 +60,7 @@ a:active {
 
 /* WhatsApp flotante */
 
-.btn-whatsapp {
+.btn-grow {
     display: block;
     font-size: 2.5rem;
     position: fixed;
@@ -94,6 +94,13 @@ a:active {
     
 }
 
+.button--index {
+    @include button-dharma--no_hover ($negro);
+    width: auto;
+    margin-bottom:1rem;
+    
+}
+
 .button--form {
 
   @include button-form;
@@ -107,6 +114,23 @@ a:active {
     &:hover {
         color: #fff;
     }
+}
+
+.button--footer {
+    @include button-dharma--no_hover ($gris);
+    width: 18rem;
+margin:.5rem;   
+font-size:1rem; 
+color: $negro;
+padding: 1rem;
+
+&:hover {
+    color: $negro;
+}
+
+
+    
+
 }
 
 /* Header & Nav */

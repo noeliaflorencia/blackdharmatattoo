@@ -1,22 +1,31 @@
+.section-estudio {
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
 .index-carrusel__slide--estudio {
     margin:0 auto;
 }
 
-.box-tattoo {
-    margin-top: 2rem;
-    background: rgb(121, 220, 203);
-    background: linear-gradient(0deg, rgba(121, 220, 203, 1) 0%, rgba(251, 159, 180, 1) 50%);
+.contenedor_box {
+    padding: 0 2rem;
 
-    .box-tattoo__texto {
-        padding:3rem;
-
-        iframe {
-            height: 35rem;
-            width: 100%;
-            margin: 0 auto;
-            
+    .box-tattoo {
+    
+    
+        background-color: $aqua;
+    
+        .box-tattoo__texto {
+            padding:3rem;
+    
+            iframe {
+                height: 35rem;
+                width: 100%;
+                margin: 0 auto;
+                
+            }
         }
+    
+       
     }
-
-   
 }

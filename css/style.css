@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700;900&family=Roboto:wght@300;400;700;900&display=swap");
 * {
   margin: 0;
@@ -9,81 +10,6 @@
 /* Colores */
 /* Fuentes */
 /* Estilos */
-@media screen and (min-width: 1920px) {
-  .index {
-    height: 90vh;
-  }
-  .index__banner h1 {
-    font-size: 20rem;
-    line-height: 17rem;
-  }
-  .index__banner h2 {
-    font-size: 5rem;
-  }
-}
-
-@media screen and (max-width: 1281px) {
-  .index {
-    height: 90vh;
-  }
-  .index__banner h1 {
-    font-size: 13rem;
-    line-height: 10rem;
-  }
-  .index__banner h2 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .index {
-    height: 90vh;
-  }
-  .index__banner h1 {
-    font-size: 10rem;
-    line-height: 8rem;
-  }
-  .index__banner h2 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .index__banner h1 {
-    font-size: 15rem;
-    line-height: 12rem;
-  }
-  .index__banner h2 {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 481px) {
-  .index__banner h1 {
-    font-size: 9rem;
-    line-height: 7.5rem;
-  }
-  .index__banner h2 {
-    font-size: 3rem;
-  }
-  .btn-whatsapp {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 361px) {
-  .index__banner h1 {
-    font-size: 7rem;
-    line-height: 6rem;
-  }
-  .index__banner h2 {
-    font-size: 2.5rem;
-  }
-  .btn-whatsapp {
-    visibility: hidden;
-  }
-}
-
 html {
   font-size: 62.5%;
   /* cambia la base de 16px a 10px */
@@ -140,7 +66,7 @@ a:active {
 }
 
 /* WhatsApp flotante */
-.btn-whatsapp {
+.btn-grow {
   display: block;
   font-size: 2.5rem;
   position: fixed;
@@ -156,11 +82,11 @@ a:active {
   transition: .5s ease-in-out;
 }
 
-.btn-whatsapp img {
+.btn-grow img {
   width: 12rem;
 }
 
-.btn-whatsapp:hover {
+.btn-grow:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
@@ -216,6 +142,24 @@ a:active {
           clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
 
+.button--index {
+  letter-spacing: .1rem;
+  padding: 1.6rem;
+  background-color: #30343F;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.button--index a {
+  color: #fff;
+}
+
 .button--form {
   letter-spacing: .1rem;
   padding: 1.4rem;
@@ -238,6 +182,31 @@ a:active {
 
 .button--form-delete:hover {
   color: #fff;
+}
+
+.button--footer {
+  letter-spacing: .1rem;
+  padding: 1.6rem;
+  background-color: #E9E9E9;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  display: inline-block;
+  width: 18rem;
+  margin: .5rem;
+  font-size: 1rem;
+  color: #30343F;
+  padding: 1rem;
+}
+
+.button--footer a {
+  color: #fff;
+}
+
+.button--footer:hover {
+  color: #30343F;
 }
 
 /* Header & Nav */
@@ -433,6 +402,9 @@ a:active {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   color: #30343F;
+  font-size: 10vw;
+  line-height: 8vw;
+  padding: .5rem 0;
 }
 
 .index .index__banner h2 {
@@ -444,6 +416,7 @@ a:active {
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   color: #30343F;
+  padding: .5rem 0;
 }
 
 .index .index__banner__img img {
@@ -562,121 +535,11 @@ a:active {
 }
 
 .index-estudio .index-estudio__logos img {
-  height: 18rem;
-  padding: 1rem 3rem 2rem 0;
-}
-
-/* Reviews */
-.index-reviews {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.index-reviews h2 {
-  padding: 2rem;
-}
-
-.index-reviews h3 {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-}
-
-.index-reviews .index-reviews__card {
-  margin: 1rem;
   padding: 3rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #B9D2B1;
+  max-height: 20rem;
 }
 
-.index-reviews .index-reviews__card:hover {
-  -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-
-.index-reviews .index-reviews__card h2 {
-  font-size: 1.8rem;
-  line-height: 1;
-  letter-spacing: .1rem;
-  margin: 2rem 0;
-  -webkit-transition: color .45s ease;
-  transition: color .45s ease;
-  text-transform: uppercase;
-  transition: color .45s ease;
-  border-top: 1px solid #30343F;
-  padding: 1rem;
-}
-
-.index-reviews .index-reviews__card p {
-  color: #30343F;
-  line-height: 1.8;
-}
-
-.index-reviews .index-reviews__card--rosa {
-  background-color: #FB9FB4;
-}
-
-/* GrowShop */
-.index-weedside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 2rem .5rem;
-  margin: 2rem;
-}
-
-.index-weedside .index-weedside__img {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.index-weedside .index-weedside__img img {
-  width: 100%;
-  padding: 1rem;
-}
-
-/* Form contacto */
-.contenedor__form {
-  padding: 0 2rem;
-}
-
-.index-contacto {
-  background-color: #B9D2B1;
-}
-
-.index-contacto .index-contacto__titulo h2 {
-  padding-left: 3rem;
-  padding-top: 3rem;
-  font-size: 1.8rem;
-}
-
-.index-contacto form {
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  padding: 2rem;
-}
-
-.index-contacto form input,
-.index-contacto form textarea {
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-}
-
-.index-contacto .index-contacto__map {
-  padding: 2rem;
-}
-
+/* Galería - Sólo desktop */
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,22 +638,143 @@ a:active {
   transition: .3s;
 }
 
+/* Reviews */
+.index-reviews {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.index-reviews h2 {
+  padding: 2rem;
+}
+
+.index-reviews h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.index-reviews .index-reviews__card {
+  margin: 1rem;
+  padding: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #B9D2B1;
+}
+
+.index-reviews .index-reviews__card:hover {
+  -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.index-reviews .index-reviews__card h2 {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: .1rem;
+  margin: 2rem 0;
+  -webkit-transition: color .45s ease;
+  transition: color .45s ease;
+  text-transform: uppercase;
+  transition: color .45s ease;
+  border-top: 1px solid #30343F;
+  padding: 1rem;
+}
+
+.index-reviews .index-reviews__card p {
+  color: #30343F;
+  line-height: 1.8;
+}
+
+.index-reviews .index-reviews__card .card__icon i {
+  font-size: 1.6rem;
+}
+
+.index-reviews .index-reviews__card--rosa {
+  background-color: #FB9FB4;
+}
+
+/* GrowShop */
+.index-weedside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem .5rem;
+  margin: 2rem;
+}
+
+.index-weedside .index-weedside__img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-weedside .index-weedside__img img {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Form contacto */
+.contenedor__form {
+  padding: 0 2rem;
+}
+
+.index-contacto {
+  background-color: #B9D2B1;
+}
+
+.index-contacto .index-contacto__titulo h2 {
+  padding-left: 3rem;
+  padding-top: 3rem;
+  font-size: 1.8rem;
+}
+
+.index-contacto form {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.index-contacto form input,
+.index-contacto form textarea {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.index-contacto .index-contacto__map {
+  padding: 2rem;
+}
+
+.section-estudio {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .index-carrusel__slide--estudio {
   margin: 0 auto;
 }
 
-.box-tattoo {
-  margin-top: 2rem;
-  background: #79dccb;
-  background: -webkit-gradient(linear, left bottom, left top, from(#79dccb), color-stop(50%, #fb9fb4));
-  background: linear-gradient(0deg, #79dccb 0%, #fb9fb4 50%);
+.contenedor_box {
+  padding: 0 2rem;
 }
 
-.box-tattoo .box-tattoo__texto {
+.contenedor_box .box-tattoo {
+  background-color: #B9D2B1;
+}
+
+.contenedor_box .box-tattoo .box-tattoo__texto {
   padding: 3rem;
 }
 
-.box-tattoo .box-tattoo__texto iframe {
+.contenedor_box .box-tattoo .box-tattoo__texto iframe {
   height: 35rem;
   width: 100%;
   margin: 0 auto;
@@ -803,8 +787,8 @@ a:active {
   background: #fff;
   margin: 0 auto;
   border-radius: .4rem;
-  -webkit-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   margin: 3rem;
 }
 
@@ -873,6 +857,10 @@ a:active {
   color: #FB9FB4;
   display: block;
   margin-top: .5rem;
+}
+
+.main_contacto {
+  padding: 3rem;
 }
 
 .main_contacto__texto {
