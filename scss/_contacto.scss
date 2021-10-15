@@ -1,11 +1,11 @@
 .main_contacto {
-    padding:3rem;
+    padding: 3rem;
 }
 
 .main_contacto__texto {
     text-align: center;
     text-transform: uppercase;
-    font-weight: map-get($font-weights,medium);
+    font-weight: map-get($font-weights, medium);
     font-family: $nunito;
     border-bottom: 2px solid $aqua;
 }
@@ -15,17 +15,17 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    
+
 
     h3 {
         text-transform: uppercase;
     }
-    
+
 
     i {
-        font-size:5rem;
+        font-size: 5rem;
         color: $negro;
         padding: 2rem;
     }
-    
+
 }

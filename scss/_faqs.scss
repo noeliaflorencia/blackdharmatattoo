@@ -1,5 +1,11 @@
 .main-faqs {
-padding: 3rem;
+    padding: 3rem;
+    color: $negro;
+
+
+    a {
+        color: $rosa;
+    }
 }
 
 .main-faqs__desplegable {
@@ -10,5 +16,17 @@ padding: 3rem;
         font-family: $nunito;
         font-size: 1.8rem;
         font-weight: 700;
+    }
+
+    .accordion-button {
+        &:not(.collapsed) {
+            color: #fff;
+            background-color: $rosa;
+        }
+
+        &:focus {
+            border-color: #fff;
+            box-shadow: none;
+        }
     }
 }

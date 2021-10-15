@@ -80,7 +80,7 @@ a:active {
 
     &:hover {
         filter: grayscale(0);
-        
+
     }
 
 }
@@ -90,21 +90,21 @@ a:active {
 .button {
 
     @include button-dharma ($rosa);
-    margin:1rem;
-    
+    margin: 1rem;
+
 }
 
 .button--index {
     @include button-dharma--no_hover ($negro);
     width: auto;
-    margin-bottom:1rem;
-    
+    margin-bottom: 1rem;
+
 }
 
 .button--form {
 
-  @include button-form;
-    
+    @include button-form;
+
 }
 
 .button--form-delete {
@@ -119,17 +119,17 @@ a:active {
 .button--footer {
     @include button-dharma--no_hover ($gris);
     width: 18rem;
-margin:.5rem;   
-font-size:1rem; 
-color: $negro;
-padding: 1rem;
-
-&:hover {
+    margin: .5rem;
+    font-size: 1rem;
     color: $negro;
-}
+    padding: 1rem;
+
+    &:hover {
+        color: $negro;
+    }
 
 
-    
+
 
 }
 
@@ -137,8 +137,8 @@ padding: 1rem;
 
 .header {
     background-color: $rosa;
-    
-    
+
+
 }
 
 .header__top {
@@ -174,7 +174,7 @@ padding: 1rem;
 
     a {
         color: $negro;
-        transition:.2s;
+        transition: .2s;
 
         &:hover,
         &:focus {
@@ -196,20 +196,26 @@ padding: 1rem;
     .toggler {
         font-size: 3rem;
         padding: .5rem;
-        
+
     }
 
     .navbar__menu {
         width: 100% !important;
         justify-content: space-around;
-       
+
 
         .active {
-          color:#fff;
+            color: #fff;
             border-bottom: .2rem solid #fff;
         }
 
-        
+
+    }
+
+    .navbar-toggler {
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
 
@@ -217,7 +223,7 @@ padding: 1rem;
 /* Foooter */
 
 .footer {
-    
+
     text-align: center;
     color: $gris;
     padding: 2rem;
