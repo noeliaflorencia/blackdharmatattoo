@@ -48,7 +48,7 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
     display: inline-block;
     position: relative;
     touch-action: manipulation;
- 
+
 
     a {
         color: #fff;
@@ -74,7 +74,7 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
 
     &:hover:before {
-        animation:  0s step-start forwards;
+        animation: 0s step-start forwards;
         clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
     }
 
@@ -92,13 +92,90 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
     font-weight: map-get($font-weights, medium);
     font-size: 1.4rem;
     text-align: center;
-    border:none;
-    margin-right:1rem;
-    color:#fff;
-    
+    border: none;
+    margin-right: 1rem;
+    color: #fff;
+
 
 }
 
 
 
 
+@media screen and (min-width: 1024px) {
+    .index__banner {
+
+        h1 {
+            font-size: 10vw;
+            line-height: 8vw;
+        }
+
+        h2 {
+            font-size: 4vw;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 769px) {
+    .index__banner {
+
+        h1 {
+            font-size: 10vw;
+            line-height: 8vw;
+        }
+
+        h2 {
+            font-size: 4.5vw;
+        }
+    }
+
+}
+
+@media screen and (max-width: 481px) {
+
+    .index__banner {
+        h1 {
+            font-size: 18vw;
+            line-height: 14vw;
+        }
+
+        h2 {
+            font-size: 7vw;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 361px) {
+
+    .index__banner {
+        h1 {
+            font-size: 17vw;
+            line-height: 13vw;
+        }
+
+        h2 {
+            font-size: 7vw;
+        }
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .index__banner {
+        h1 {
+            font-size: 17vw;
+            line-height: 13vw;
+        }
+
+        h2 {
+            font-size: 7vw;
+        }
+    }
+
+}

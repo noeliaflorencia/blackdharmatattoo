@@ -10,6 +10,56 @@
 /* Colores */
 /* Fuentes */
 /* Estilos */
+@media screen and (min-width: 1024px) {
+  .index__banner h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+  .index__banner h2 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .index__banner h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+  .index__banner h2 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .index__banner h1 {
+    font-size: 18vw;
+    line-height: 14vw;
+  }
+  .index__banner h2 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .index__banner h1 {
+    font-size: 17vw;
+    line-height: 13vw;
+  }
+  .index__banner h2 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .index__banner h1 {
+    font-size: 17vw;
+    line-height: 13vw;
+  }
+  .index__banner h2 {
+    font-size: 7vw;
+  }
+}
+
 html {
   font-size: 62.5%;
   /* cambia la base de 16px a 10px */
@@ -402,8 +452,6 @@ a:active {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   color: #30343F;
-  font-size: 10vw;
-  line-height: 8vw;
   padding: .5rem 0;
 }
 
