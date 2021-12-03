@@ -452,6 +452,11 @@ a:active {
   margin: 0 auto;
 }
 
+.footer .footer__copyright a {
+  color: #fff;
+  font-weight: 600;
+}
+
 .container-banner {
   padding: 3rem;
   display: -webkit-box;
