@@ -132,6 +132,10 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
         }
     }
 
+    .event__btn {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 481px) {
