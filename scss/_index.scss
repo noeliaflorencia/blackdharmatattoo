@@ -19,6 +19,8 @@
     &:nth-child(1) {
         transform: translateX(-30vw);
         color:$negro;
+
+        
     }
 
     &:nth-child(2) {
@@ -62,6 +64,7 @@
         margin-top:1rem;
         font-weight: 700;
         color:$negro;
+    
 
     }
 
@@ -126,10 +129,9 @@
 
     .index-estudio__img {
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 3rem;
         flex-direction: column;
+        margin-top:5%;
 
         a {
             color:$rosa;
@@ -137,6 +139,18 @@
 
         p {
             margin-top:1rem;
+        }
+
+        .main-faqs {
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        img {
+            padding:1rem ;
         }
 
     }
@@ -149,6 +163,7 @@
         flex-direction: column;
         text-align: center;
         color:$negro;
+        margin-top:5%;
 
 
         p {
@@ -183,8 +198,7 @@
     }
 
     .index-estudio__texto--padding {
-        border-bottom: 1rem double;
-        border-bottom-color: rgba(185, 210, 177, 0.2);
+        
     }
 
     .index-estudio__logos {
@@ -379,6 +393,8 @@
     align-items: center;
     border-radius: 2rem .5rem;
     margin: 2rem;
+    margin-top:-5rem;
+
 
 
     .index-weedside__img {
@@ -403,11 +419,13 @@
 
 .contenedor__form {
     padding: 0 2rem;
+    flex-direction: column;
 }
 
 .index-contacto {
 
-    background-color: $aqua;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: $gris;
 
     .index-contacto__titulo {
         h2 {
@@ -415,21 +433,10 @@
             padding-top: 3rem;
             font-size: 1.8rem;
         }
+
+    
     }
 
-    form {
-        font-family: $nunito;
-        font-weight: map-get($font-weights, medium);
-        font-size: 1.6rem;
-        padding: 2rem;
-
-
-        input,
-        textarea {
-            font-family: $nunito;
-            font-weight: 300;
-        }
-    }
 
     .index-contacto__map {
         padding: 2rem;

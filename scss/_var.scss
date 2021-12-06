@@ -119,9 +119,9 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
         font-size: 15rem;
 
         &:nth-child(1) {
-            
+
             margin-bottom: -7rem;
-            
+
         }
     }
 
@@ -150,9 +150,9 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
         font-size: 15rem;
 
         &:nth-child(1) {
-            
+
             margin-bottom: -7rem;
-            
+
         }
     }
 
@@ -160,28 +160,111 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
 
 @media screen and (max-width: 481px) {
 
-    .index__banner {
-        h1 {
-            font-size: 18vw;
-            line-height: 14vw;
+    p {
+        font-size:1.4rem!important;
+    }
+
+    h2 {
+        font-size: 1.8rem!important;
+    }
+
+    h3 {
+        font-size: 1.6rem!important;
+    }
+
+    .header__top p {
+        font-size: .9rem!important;
+    }
+
+    .event__info {
+
+
+        h3 {
+            text-align: center;
+            font-family: $roboto;
+            margin-top: 1rem;
+            font-weight: 700;
+            color: $negro;
+            font-size: 1.8rem!important;
+
         }
 
-        h2 {
-            font-size: 7vw;
+        a {
+            background-color: $negro;
+
         }
     }
+
+    .event__btn {
+        display: flex;
+
+
+        .button--index {
+            font-size: 1.4rem;
+            padding: 1.2rem;
+            margin:0!important;
+            margin-top: 1rem!important;
+        }
+    }
+
+    
 
     .marquee {
         font-size: 10rem;
 
         &:nth-child(1) {
-            
+
             margin-bottom: -5rem;
-            
+
         }
+
+
+    }
+
+    .event__texto {
+        padding-top: 0 !important;
+        
+    }
+
+    .index-estudio__logos img {
+        padding: 1.5rem !important;
+    }
+
+    .button {
+        font-size: 1.4rem!important;
+        padding: 1.2rem!important;
+    }
+
+
+    .boton-ver-mas {
+        font-size: 1.4rem;
+            padding: 1.2rem;
+
+            .button {
+                width: 100%;
+                
+            }
+    }
+
+    .main-faqs {
+        box-shadow: none!important;
+        margin-bottom: 5%;
 
         
     }
+
+    .footer__copyright  {
+
+        p,
+        i {
+        font-size: 1.2rem!important;}
+    }
+
+    .footer__logos {
+        margin:0!important;
+        margin:1rem 0!important;
+    }
+    
 
 }
 

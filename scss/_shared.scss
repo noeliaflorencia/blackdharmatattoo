@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    
+
     overflow-x: hidden;
     font-family: $nunito;
     cursor: auto;
@@ -225,7 +225,7 @@ a:active {
 
     text-align: center;
     color: $gris;
-    padding: 2rem;
+    padding-top: 2rem;
 
     i {
         color: #ffffff;
@@ -305,7 +305,7 @@ a:active {
         }
 
         a {
-            color:#fff;
+            color: #fff;
             font-weight: 600;
         }
     }
