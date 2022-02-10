@@ -8,6 +8,7 @@
 }
 
 /* Colores */
+/*$negro: #30343F;*/
 /* Fuentes */
 /* Estilos */
 @media screen and (min-width: 1024px) {
@@ -66,11 +67,11 @@
     font-family: "Roboto", sans-serif;
     margin-top: 1rem;
     font-weight: 700;
-    color: #30343F;
+    color: #000;
     font-size: 1.8rem !important;
   }
   .event__info a {
-    background-color: #30343F;
+    background-color: #000;
   }
   .event__btn {
     display: -webkit-box;
@@ -144,7 +145,7 @@
 html {
   font-size: 62.5%;
   /* cambia la base de 16px a 10px */
-  color: #30343F;
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -223,7 +224,7 @@ a:active {
 .button {
   letter-spacing: .1rem;
   padding: 1.6rem;
-  background-color: #FB9FB4;
+  background-color: #000;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
@@ -249,7 +250,7 @@ a:active {
           animation: .5s step-end forwards;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background-color: #30343F;
+  background-color: #FB9DC6;
   -webkit-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
           clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
@@ -273,7 +274,7 @@ a:active {
 .button--index {
   letter-spacing: .1rem;
   padding: 1.6rem;
-  background-color: #30343F;
+  background-color: #fff;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
@@ -285,13 +286,13 @@ a:active {
 }
 
 .button--index a {
-  color: #fff;
+  color: #000;
 }
 
 .button--form {
   letter-spacing: .1rem;
   padding: 1.4rem;
-  background-color: #30343F;
+  background-color: #000;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
@@ -325,27 +326,28 @@ a:active {
   width: 18rem;
   margin: .5rem;
   font-size: 1rem;
-  color: #30343F;
+  color: #000;
   padding: 1rem;
 }
 
 .button--footer a {
-  color: #fff;
+  color: #000;
 }
 
 .button--footer:hover {
-  color: #30343F;
+  color: #000;
 }
 
 /* Header & Nav */
 .header {
-  background-color: #FB9FB4;
+  background-color: #000;
+  height: 100vh;
 }
 
 .header__top {
   text-align: right;
-  background-color: #30343F;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   height: auto;
   padding-right: 1rem;
 }
@@ -374,7 +376,7 @@ a:active {
 }
 
 .header__navbar a {
-  color: #30343F;
+  color: #000;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -423,7 +425,7 @@ a:active {
 }
 
 .footer .footer__color {
-  background-color: #30343F;
+  background-color: #000;
 }
 
 .footer .footer__navbar {
@@ -500,7 +502,7 @@ a:active {
   height: auto;
   text-align: center;
   color: #000;
-  background-color: #FB9FB4;
+  background-color: #FB9DC6;
   padding: .5rem;
 }
 
@@ -541,7 +543,8 @@ a:active {
 .marquee:nth-child(1) {
   -webkit-transform: translateX(-30vw);
           transform: translateX(-30vw);
-  color: #30343F;
+  color: #FB9DC6;
+  margin-top: 1rem;
 }
 
 .marquee:nth-child(2) {
@@ -595,11 +598,11 @@ a:active {
   font-family: "Roboto", sans-serif;
   margin-top: 1rem;
   font-weight: 700;
-  color: #30343F;
+  color: #000;
 }
 
 .event__info a {
-  background-color: #30343F;
+  background-color: #000;
 }
 
 .event__btn {
@@ -656,9 +659,7 @@ a:active {
 
 /* Estudio */
 .index-estudio {
-  position: relative;
-  top: -12rem;
-  margin-bottom: -15rem;
+  padding-bottom: 3rem;
 }
 
 .index-estudio .index-estudio__img {
@@ -676,7 +677,7 @@ a:active {
 }
 
 .index-estudio .index-estudio__img a {
-  color: #FB9FB4;
+  color: #FB9DC6;
 }
 
 .index-estudio .index-estudio__img p {
@@ -710,7 +711,7 @@ a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: #30343F;
+  color: #000;
   margin-top: 5%;
 }
 
@@ -736,11 +737,11 @@ a:active {
 }
 
 .index-estudio .event__texto a {
-  color: #FB9FB4;
+  color: #FB9DC6;
 }
 
 .index-estudio .index-estudio__texto h2 a {
-  color: #FB9FB4;
+  color: #FB9DC6;
 }
 
 .index-estudio .index-estudio__logos img {
@@ -754,9 +755,8 @@ a:active {
 
 /* Galería - Sólo desktop */
 .gallery__container {
-  background-color: #FB9FB4;
-  position: relative;
-  top: -10rem;
+  background-color: #000;
+  padding: 3rem;
 }
 
 .gallery {
@@ -787,7 +787,8 @@ a:active {
 .gallery .gallery__titulo h3 {
   font-family: "Nunito", sans-serif;
   padding: .5rem;
-  border-bottom: 0.2rem solid #30343F;
+  border-bottom: 0.2rem solid #FB9DC6;
+  font-size: 2rem;
 }
 
 .gallery .gallery__titulo li {
@@ -797,7 +798,7 @@ a:active {
 }
 
 .gallery .gallery__titulo li a {
-  color: #30343F;
+  color: #fff;
 }
 
 .gallery__column {
@@ -895,12 +896,12 @@ a:active {
   transition: color .45s ease;
   text-transform: uppercase;
   transition: color .45s ease;
-  border-top: 1px solid #30343F;
+  border-top: 1px solid #000;
   padding: 1rem;
 }
 
 .index-reviews .index-reviews__card p {
-  color: #30343F;
+  color: #000;
   line-height: 1.8;
 }
 
@@ -909,7 +910,7 @@ a:active {
 }
 
 .index-reviews .index-reviews__card--rosa {
-  background-color: #FB9FB4;
+  background-color: #FB9DC6;
 }
 
 /* GrowShop */
@@ -925,7 +926,6 @@ a:active {
           align-items: center;
   border-radius: 2rem .5rem;
   margin: 2rem;
-  margin-top: -5rem;
 }
 
 .index-weedside .index-weedside__img {
@@ -1072,7 +1072,7 @@ a:active {
 .card .details h2 span {
   font-weight: 500;
   font-size: 1.6rem;
-  color: #FB9FB4;
+  color: #FB9DC6;
   display: block;
   margin-top: .5rem;
 }
@@ -1085,7 +1085,7 @@ a:active {
   text-align: center;
   font-family: "Nunito", sans-serif;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #30343F;
+  border-bottom: 2px solid #000;
 }
 
 .main_contacto__texto p {
@@ -1115,17 +1115,17 @@ a:active {
 
 .main_contacto__transportes i {
   font-size: 4rem;
-  color: #30343F;
+  color: #000;
   padding: 2rem;
 }
 
 .main-faqs {
   padding: 3rem;
-  color: #30343F;
+  color: #000;
 }
 
 .main-faqs a {
-  color: #FB9FB4;
+  color: #FB9DC6;
 }
 
 .main-faqs__desplegable {
@@ -1141,7 +1141,7 @@ a:active {
 
 .main-faqs__desplegable .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: #FB9FB4;
+  background-color: #FB9DC6;
 }
 
 .main-faqs__desplegable .accordion-button:focus {

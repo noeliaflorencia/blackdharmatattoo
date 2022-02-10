@@ -88,13 +88,13 @@ a:active {
 
 .button {
 
-    @include button-dharma ($rosa);
+    @include button-dharma ($negro);
     margin: 1rem;
 
 }
 
 .button--index {
-    @include button-dharma--no_hover ($negro);
+    @include button-dharma--no_hover (#fff);
     width: auto;
     margin-bottom: 1rem;
 
@@ -135,15 +135,16 @@ a:active {
 /* Header & Nav */
 
 .header {
-    background-color: $rosa;
+    background-color: $negro;
+    height: 100vh;
 
 
 }
 
 .header__top {
     text-align: right;
-    background-color: $negro;
-    color: #fff;
+    background-color: #fff;
+    color: $negro;
     height: auto;
     padding-right: 1rem;
 

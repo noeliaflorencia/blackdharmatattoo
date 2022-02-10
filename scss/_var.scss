@@ -1,7 +1,8 @@
 /* Colores */
 
-$rosa: #FB9FB4;
-$negro: #30343F;
+$rosa: #FB9DC6;
+/*$negro: #30343F;*/
+$negro:#000;
 $gris: #E9E9E9;
 $aqua: #B9D2B1;
 
@@ -30,7 +31,7 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
     display: inline-block;
 
     a {
-        color: #fff;
+        color: $negro;
     }
 }
 
@@ -59,7 +60,7 @@ rgba(17, 17, 26, 0.05) 0px 8px 32px;
     &:before {
         animation: .5s step-end forwards;
         backface-visibility: hidden;
-        background-color: $negro;
+        background-color: $rosa;
         clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
         content: "";
         height: 100%;

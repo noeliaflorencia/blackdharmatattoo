@@ -18,7 +18,8 @@
 
     &:nth-child(1) {
         transform: translateX(-30vw);
-        color:$negro;
+        color:$rosa;
+        margin-top: 1rem;
 
         
     }
@@ -120,12 +121,8 @@
 /* Estudio */
 
 .index-estudio {
+    padding-bottom:3rem;
     
-    position: relative;
-    top:-12rem;
-    margin-bottom:-15rem;
-
-
 
     .index-estudio__img {
         display: flex;
@@ -220,9 +217,9 @@
 /* Galería - Sólo desktop */
 
 .gallery__container {
-    background-color: $rosa;
-    position: relative;
-    top:-10rem;
+    background-color: $negro;
+    padding: 3rem;
+    
 }
 
 .gallery {
@@ -246,7 +243,8 @@
         h3 {
             font-family: $nunito;
             padding: .5rem;
-            border-bottom: .2rem solid $negro;
+            border-bottom: .2rem solid $rosa;
+            font-size: 2rem;
 
         }
 
@@ -256,7 +254,7 @@
             padding: .5rem;
 
             a {
-                color: $negro;
+                color: #fff;
             }
 
 
@@ -393,7 +391,7 @@
     align-items: center;
     border-radius: 2rem .5rem;
     margin: 2rem;
-    margin-top:-5rem;
+    
 
 
 
