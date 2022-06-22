@@ -1,0 +1,79 @@
+.card {
+    position: relative;
+    width: 30rem;
+    height: 35rem;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: .4rem;
+    box-shadow: $sombra;
+    margin: 3rem;
+}
+
+.card:before,
+.card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .4rem;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+
+}
+
+
+
+.card .imgBx {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.card:hover .imgBx {
+    bottom: 8rem;
+
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    height: 6rem;
+    text-align: center;
+}
+
+.card .details h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.card .details h2 span {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $rosa;
+    display: block;
+    margin-top: .5rem;
+}

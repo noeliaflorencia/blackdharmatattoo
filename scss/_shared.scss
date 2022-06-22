@@ -1,0 +1,437 @@
+html {
+
+    font-size: 62.5%;
+    /* cambia la base de 16px a 10px */
+    color: $negro;
+    overflow-x: hidden;
+
+
+}
+
+body {
+
+    overflow-x: hidden;
+    font-family: $nunito;
+    cursor: auto;
+}
+
+/* Textos (excepto footer) */
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: $nunito;
+    text-transform: uppercase;
+    font-weight: map-get($font-weights, bold);
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+
+p {
+    font-size: 1.6rem;
+    font-weight: map-get($font-weights, regular);
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/* WhatsApp flotante */
+
+.btn-grow {
+    display: block;
+    font-size: 2.5rem;
+    position: fixed;
+    right: .8rem;
+    bottom: .8rem;
+    padding: 2rem;
+    line-height: 8rem;
+    text-align: center;
+    z-index: 999;
+    filter: grayscale(9);
+    transition: .5s ease-in-out;
+
+
+    img {
+        width: 12rem;
+    }
+
+    &:hover {
+        filter: grayscale(0);
+
+    }
+
+}
+
+/* Botones */
+
+.button {
+
+    @include button-dharma ($negro);
+    margin: 1rem;
+
+}
+
+.button--index {
+    @include button-dharma--no_hover (#fff);
+    width: auto;
+    margin-bottom: 1rem;
+
+}
+
+.button--form {
+
+    @include button-form;
+
+}
+
+.button--form-delete {
+    color: #606980;
+    transition: .3s;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.button--footer {
+    @include button-dharma--no_hover ($gris);
+    width: 18rem;
+    margin: .5rem;
+    font-size: 1rem;
+    color: $negro;
+    padding: 1rem;
+
+    &:hover {
+        color: $negro;
+    }
+
+
+
+
+}
+
+/* Header & Nav */
+
+.header {
+    background-color: $negro;
+
+
+
+}
+
+.header__top {
+    text-align: right;
+    background-color: $rosa;
+    color: $negro;
+    height: auto;
+    padding-right: 1rem;
+
+    p {
+        padding: .5rem;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+}
+
+.header__navbar {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: map-get($font-weights, medium);
+    font-family: $nunito;
+
+
+    li {
+        display: flex;
+        list-style-type: none;
+        padding: 1rem;
+
+
+    }
+
+    a {
+        color: $negro;
+        transition: .2s;
+
+        &:hover,
+        &:focus {
+
+            color: #fff;
+        }
+    }
+
+
+
+    .bg-light,
+    .navbar-collapse,
+    .navbar_color {
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: 0;
+
+    }
+
+    .toggler {
+        font-size: 3rem;
+        padding: .5rem;
+
+    }
+
+    .navbar__menu {
+        width: 100% !important;
+        justify-content: space-around;
+
+
+        .active {
+            color: #fff;
+            border-bottom: .2rem solid #fff;
+        }
+
+
+    }
+
+    .navbar-toggler {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $rosa;
+    width: 100%;
+    flex-wrap: wrap;
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+
+
+        .footer-logos-container {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+
+
+            .footer-logos-container-div {
+                display: flex;
+                justify-content: center;
+
+                flex-wrap: wrap;
+
+
+                .footer-logos {
+
+
+
+                    img {
+                        padding: .5rem;
+                        width: 13rem;
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-around !important;
+        flex-wrap: wrap;
+        margin: auto !important;
+        padding: 3rem;
+
+        div {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                list-style-type: none;
+                display: inline-block;
+
+
+                li {
+                    padding: .2rem;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+
+
+
+                    a {
+
+                        color: #fff;
+                        padding: .5rem;
+
+                        &:hover {
+                            text-decoration: line-through;
+                        }
+                    }
+
+                    p {
+                        color: #fff;
+                        font-weight: bold;
+                        padding: .5rem;
+                        font-size: 1.4rem;
+                    }
+
+
+                }
+            }
+
+
+
+
+
+        }
+    }
+
+    .footer-text {
+        text-align: center;
+        color: #fff;
+        padding: 1rem;
+        margin: auto;
+
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+
+        }
+
+        a {
+            width: 80%;
+            background-color: #fff !important;
+
+
+        }
+
+    }
+
+
+    .footer-links-mobile {
+
+        padding: 1rem;
+
+        .accordion-item {
+            background-color: $rosa;
+
+            .accordion-header button {
+
+                background-color: $rosa;
+                color: #fff;
+
+                p {
+                    font-family: $nunito;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+            }
+
+            .accordion-button {
+                &:not(.collapsed) {
+                    color: #fff;
+                    background-color: $rosa;
+                }
+
+                &:focus {
+                    border-color: #fff;
+                    box-shadow: none;
+                }
+            }
+
+            .accordion-body {
+                background-color: $rosa !important;
+
+
+
+                ul {
+
+                    li {
+                        list-style-type: none;
+                        padding: .5rem;
+                        font-size: 1.4rem;
+                        font-family: $nunito;
+
+                        a {
+                            color: #fff;
+                            font-weight: medium !important;
+                        }
+
+                        p {
+                            font-weight: bold !important;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+
+}
+
+
+.footer-copyright {
+    background-color: $negro;
+    text-align: center;
+    color: $rosa;
+    width: 100%;
+
+    p {
+        font-size: 1rem;
+        padding: 1rem;
+        vertical-align: center;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+
+
+

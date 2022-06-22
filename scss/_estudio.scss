@@ -1,0 +1,31 @@
+.section-estudio {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.index-carrusel__slide--estudio {
+    margin: 0 auto;
+}
+
+.contenedor_box {
+    padding: 0 2rem;
+
+    .box-tattoo {
+
+
+        background-color: $aqua;
+
+        .box-tattoo__texto {
+            padding: 3rem;
+
+            iframe {
+                height: 35rem;
+                width: 100%;
+                margin: 0 auto;
+
+            }
+        }
+
+
+    }
+}
